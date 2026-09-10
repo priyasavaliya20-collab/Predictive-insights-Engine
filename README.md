@@ -1,6 +1,5 @@
-# 🔮 Predictive Insight Engine
 
-**House Price Prediction — Regression Modeling & Diagnostics**
+<img width="1200" height="420" alt="f" src="https://github.com/user-attachments/assets/c9a0cd5e-dbe3-4240-bbf0-337c59ac4f90" />
 
 ---
 
