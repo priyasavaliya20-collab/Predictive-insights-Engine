@@ -33,17 +33,24 @@ Data Loading & EDA → Train/Test Split → Simple Linear Regression
 
 ---
 
+--
+
 ## 🛠️ Tools Used
 
-![Python](https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Jupyter](https://img.shields.io/badge/JUPYTER-4D4D4D?style=for-the-badge&logo=jupyter&logoColor=white)
-![Notebook](https://img.shields.io/badge/NOTEBOOK-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
-![Pandas](https://img.shields.io/badge/PANDAS-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NUMPY-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![Scikit-learn](https://img.shields.io/badge/SCIKIT--LEARN-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/MATPLOTLIB-2E2A5B?style=for-the-badge&logo=plotly&logoColor=white)
-![Seaborn](https://img.shields.io/badge/SEABORN-388E3C?style=for-the-badge&logo=python&logoColor=white)
-![SciPy](https://img.shields.io/badge/SCIPY-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white)
+<div>
+
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter&logoColor=white"/>
+<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
+<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white"/>
+<img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white"/>
+<img src="https://img.shields.io/badge/SciPy-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white"/>
+<img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Seaborn-4C72B0?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Gradient--Descent-Batch%20%7C%20SGD%20%7C%20Mini--Batch-EC4899?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Cross--Validation-KFold-059669?style=for-the-badge"/>
+
+</div>
 
 ---
 
