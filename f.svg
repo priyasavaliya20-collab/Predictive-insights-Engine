@@ -15,62 +15,97 @@
   </filter>
 </defs>
 
+<!-- BACKGROUND -->
 <rect width="1200" height="420" rx="25" fill="url(#bg)"/>
 
-<circle cx="1040" cy="75" r="100" fill="#7440A8" opacity=".07">
-  <animate attributeName="r" values="85;110;85" dur="6s" repeatCount="indefinite"/>
+<circle cx="1050" cy="75" r="105"
+        fill="#7440A8" opacity=".07">
+  <animate attributeName="r"
+           values="85;110;85"
+           dur="6s"
+           repeatCount="indefinite"/>
 </circle>
 
-<!-- PART -->
-<rect x="52" y="42" width="118" height="30" rx="16"
-      fill="#7440A8" opacity=".25" stroke="#7440A8"/>
+<!-- PART G -->
+<rect x="52" y="42" width="118" height="30"
+      rx="16"
+      fill="#7440A8"
+      opacity=".25"
+      stroke="#7440A8"/>
 
-<text x="111" y="62" text-anchor="middle"
-      font-family="Arial" font-size="11" font-weight="700"
-      letter-spacing="2" fill="#D89BEF">PART F</text>
+<text x="111" y="62"
+      text-anchor="middle"
+      font-family="Arial"
+      font-size="11"
+      font-weight="700"
+      letter-spacing="2"
+      fill="#D89BEF">PART G</text>
 
 <!-- TITLE -->
 <text x="52" y="120"
-      font-family="Arial" font-size="34"
-      font-weight="700" fill="#FFFFFF">Polynomial</text>
+      font-family="Arial"
+      font-size="32"
+      font-weight="700"
+      fill="#FFFFFF">Gradient Descent</text>
 
 <text x="52" y="162"
-      font-family="Arial" font-size="35"
-      font-weight="700" fill="#D89BEF">
-  Regression
+      font-family="Arial"
+      font-size="35"
+      font-weight="700"
+      fill="#D89BEF">
+  Optimization
   <animate attributeName="opacity"
-           values=".75;1;.75" dur="4s"
+           values=".75;1;.75"
+           dur="4s"
            repeatCount="indefinite"/>
 </text>
 
-<rect x="52" y="180" width="78" height="4"
-      rx="2" fill="#7440A8"/>
+<rect x="52" y="180"
+      width="78"
+      height="4"
+      rx="2"
+      fill="#7440A8"/>
 
-<rect x="137" y="180" width="37" height="4"
-      rx="2" fill="#D89BEF"/>
+<rect x="137" y="180"
+      width="37"
+      height="4"
+      rx="2"
+      fill="#D89BEF"/>
 
-<!-- LEFT GRAPH -->
-<rect x="52" y="213" width="406" height="146"
-      rx="20" fill="#171020"
-      stroke="#7440A8" stroke-width="1.5"/>
+
+<!-- LEFT: COST FUNCTION -->
+<rect x="52" y="213"
+      width="406"
+      height="146"
+      rx="20"
+      fill="#171020"
+      stroke="#7440A8"
+      stroke-width="1.5"/>
 
 <text x="78" y="240"
-      font-family="Arial" font-size="10"
-      font-weight="600" letter-spacing="1.5"
-      fill="#A86BD0">NON-LINEAR RELATIONSHIP</text>
+      font-family="Arial"
+      font-size="10"
+      font-weight="600"
+      letter-spacing="1.5"
+      fill="#A86BD0">COST FUNCTION DESCENT</text>
 
-<line x1="82" y1="330" x2="430" y2="330"
-      stroke="#7440A8" stroke-width="2"/>
+<!-- Axes -->
+<line x1="82" y1="330"
+      x2="430" y2="330"
+      stroke="#7440A8"
+      stroke-width="2"/>
 
-<line x1="82" y1="330" x2="82" y2="258"
-      stroke="#7440A8" stroke-width="2"/>
+<line x1="82" y1="330"
+      x2="82" y2="258"
+      stroke="#7440A8"
+      stroke-width="2"/>
 
-<!-- POLYNOMIAL CURVE -->
-<path d="M90 275
-         C125 315,155 315,185 288
-         C215 258,245 265,275 300
-         C305 335,340 320,365 282
-         C385 252,405 258,425 270"
+<!-- Loss Curve -->
+<path d="M90 265
+         C125 270,155 285,185 305
+         C215 325,245 330,275 315
+         C305 300,335 270,365 265
+         C390 262,410 270,425 280"
       fill="none"
       stroke="#D89BEF"
       stroke-width="3.5"
@@ -78,95 +113,178 @@
       stroke-dasharray="520"
       stroke-dashoffset="520"
       filter="url(#glow)">
+
   <animate attributeName="stroke-dashoffset"
            values="520;0;520"
            dur="7s"
            repeatCount="indefinite"/>
 </path>
 
-<!-- POINTS -->
-<circle cx="105" cy="290" r="5" fill="#7440A8"/>
-<circle cx="135" cy="310" r="5" fill="#A86BD0"/>
-<circle cx="165" cy="303" r="5" fill="#D89BEF"/>
-<circle cx="205" cy="270" r="5" fill="#A86BD0"/>
+<!-- DESCENT STEPS -->
+<circle cx="145" cy="280"
+        r="5"
+        fill="#7440A8"/>
 
-<circle cx="240" cy="267" r="5"
-        fill="#D89BEF" filter="url(#glow)">
+<circle cx="190" cy="308"
+        r="5"
+        fill="#A86BD0"/>
+
+<circle cx="235" cy="326"
+        r="6"
+        fill="#D89BEF"
+        filter="url(#glow)">
   <animate attributeName="r"
-           values="5;8;5" dur="2s"
+           values="5;8;5"
+           dur="2s"
            repeatCount="indefinite"/>
 </circle>
 
-<circle cx="280" cy="302" r="5" fill="#7440A8"/>
-<circle cx="320" cy="320" r="5" fill="#A86BD0"/>
-<circle cx="360" cy="288" r="5" fill="#D89BEF"/>
-<circle cx="405" cy="260" r="5" fill="#A86BD0"/>
+<circle cx="275" cy="315"
+        r="5"
+        fill="#A86BD0"/>
 
-<text x="275" y="252"
-      font-family="Arial" font-size="12"
-      font-weight="700" fill="#FFFFFF">
-  y = β₀ + β₁x + β₂x²
+<circle cx="320" cy="285"
+        r="5"
+        fill="#7440A8"/>
+
+<!-- MINIMUM LABEL -->
+<text x="205" y="350"
+      font-family="Arial"
+      font-size="10"
+      font-weight="700"
+      fill="#D89BEF">MINIMUM</text>
+
+<text x="300" y="252"
+      font-family="Arial"
+      font-size="12"
+      font-weight="700"
+      fill="#FFFFFF">
+  Loss ↓
 </text>
+
 
 <!-- CENTER FLOW -->
 <text x="500" y="78"
-      font-family="Arial" font-size="10"
-      font-weight="600" letter-spacing="2"
-      fill="#A86BD0">POLYNOMIAL FLOW</text>
+      font-family="Arial"
+      font-size="10"
+      font-weight="600"
+      letter-spacing="2"
+      fill="#A86BD0">OPTIMIZATION FLOW</text>
 
-<line x1="515" y1="106" x2="515" y2="320"
-      stroke="#7440A8" stroke-width="2"
-      stroke-dasharray="8 8"/>
+<line x1="515" y1="106"
+      x2="515" y2="320"
+      stroke="#7440A8"
+      stroke-width="2"
+      stroke-dasharray="8 8">
 
-<circle cx="515" cy="108" r="19"
-        fill="#7440A8" filter="url(#glow)"/>
-<text x="515" y="112" text-anchor="middle"
-      font-family="Arial" font-size="10"
-      font-weight="700" fill="#FFFFFF">01</text>
+  <animate attributeName="stroke-dashoffset"
+           values="0;-32"
+           dur="2s"
+           repeatCount="indefinite"/>
+</line>
+
+
+<!-- STEP 01 -->
+<circle cx="515" cy="108"
+        r="19"
+        fill="#7440A8"
+        filter="url(#glow)"/>
+
+<text x="515" y="112"
+      text-anchor="middle"
+      font-family="Arial"
+      font-size="10"
+      font-weight="700"
+      fill="#FFFFFF">01</text>
+
 <text x="550" y="113"
-      font-family="Arial" font-size="14"
-      font-weight="700" fill="#FFFFFF">Input X</text>
+      font-family="Arial"
+      font-size="14"
+      font-weight="700"
+      fill="#FFFFFF">Initialize</text>
 
-<circle cx="515" cy="178" r="19"
-        fill="#A86BD0" filter="url(#glow)"/>
-<text x="515" y="182" text-anchor="middle"
-      font-family="Arial" font-size="10"
-      font-weight="700" fill="#FFFFFF">02</text>
+
+<!-- STEP 02 -->
+<circle cx="515" cy="178"
+        r="19"
+        fill="#A86BD0"
+        filter="url(#glow)"/>
+
+<text x="515" y="182"
+      text-anchor="middle"
+      font-family="Arial"
+      font-size="10"
+      font-weight="700"
+      fill="#FFFFFF">02</text>
+
 <text x="550" y="183"
-      font-family="Arial" font-size="14"
-      font-weight="700" fill="#FFFFFF">Add Polynomial</text>
+      font-family="Arial"
+      font-size="14"
+      font-weight="700"
+      fill="#FFFFFF">Calculate Gradient</text>
 
-<circle cx="515" cy="248" r="19"
-        fill="#7440A8" filter="url(#glow)"/>
-<text x="515" y="252" text-anchor="middle"
-      font-family="Arial" font-size="10"
-      font-weight="700" fill="#FFFFFF">03</text>
+
+<!-- STEP 03 -->
+<circle cx="515" cy="248"
+        r="19"
+        fill="#7440A8"
+        filter="url(#glow)"/>
+
+<text x="515" y="252"
+      text-anchor="middle"
+      font-family="Arial"
+      font-size="10"
+      font-weight="700"
+      fill="#FFFFFF">03</text>
+
 <text x="550" y="253"
-      font-family="Arial" font-size="14"
-      font-weight="700" fill="#FFFFFF">Fit Curve</text>
+      font-family="Arial"
+      font-size="14"
+      font-weight="700"
+      fill="#FFFFFF">Update Parameters</text>
 
-<circle cx="515" cy="318" r="19"
-        fill="#D89BEF" filter="url(#glow)"/>
-<text x="515" y="322" text-anchor="middle"
-      font-family="Arial" font-size="10"
-      font-weight="700" fill="#FFFFFF">04</text>
+
+<!-- STEP 04 -->
+<circle cx="515" cy="318"
+        r="19"
+        fill="#D89BEF"
+        filter="url(#glow)"/>
+
+<text x="515" y="322"
+      text-anchor="middle"
+      font-family="Arial"
+      font-size="10"
+      font-weight="700"
+      fill="#FFFFFF">04</text>
+
 <text x="550" y="323"
-      font-family="Arial" font-size="14"
-      font-weight="700" fill="#FFFFFF">Predict</text>
+      font-family="Arial"
+      font-size="14"
+      font-weight="700"
+      fill="#FFFFFF">Converge</text>
+
 
 <!-- RIGHT ENGINE -->
-<rect x="760" y="45" width="380" height="176"
-      rx="22" fill="#171020"
-      stroke="#A86BD0" stroke-width="1.5"/>
+<rect x="760" y="45"
+      width="380"
+      height="176"
+      rx="22"
+      fill="#171020"
+      stroke="#A86BD0"
+      stroke-width="1.5"/>
 
 <text x="950" y="80"
       text-anchor="middle"
-      font-family="Arial" font-size="10"
-      font-weight="600" letter-spacing="2"
-      fill="#A86BD0">POLYNOMIAL ENGINE</text>
+      font-family="Arial"
+      font-size="10"
+      font-weight="600"
+      letter-spacing="2"
+      fill="#A86BD0">GRADIENT ENGINE</text>
 
-<!-- ROUND RING — INNER LINE REMOVED -->
-<circle cx="835" cy="133" r="40"
+
+<!-- ROUND ENGINE -->
+<circle cx="835" cy="133"
+        r="40"
         fill="none"
         stroke="#7440A8"
         stroke-width="9"
@@ -182,55 +300,83 @@
 </circle>
 
 <!-- CENTER DOT ONLY -->
-<circle cx="835" cy="133" r="11"
+<circle cx="835" cy="133"
+        r="11"
         fill="#D89BEF"
         filter="url(#glow)">
+
   <animate attributeName="r"
            values="9;14;9"
            dur="2.5s"
            repeatCount="indefinite"/>
 </circle>
 
-<circle cx="835" cy="93" r="5" fill="#A86BD0"/>
+<circle cx="835" cy="93"
+        r="5"
+        fill="#A86BD0"/>
 
-<circle cx="795" cy="93" r="4" fill="#D89BEF">
+<circle cx="795" cy="93"
+        r="4"
+        fill="#D89BEF">
   <animate attributeName="cy"
            values="93;85;93"
            dur="2.5s"
            repeatCount="indefinite"/>
 </circle>
 
-<circle cx="891" cy="157" r="4" fill="#7440A8">
+<circle cx="891" cy="157"
+        r="4"
+        fill="#7440A8">
   <animate attributeName="cy"
            values="157;165;157"
            dur="3s"
            repeatCount="indefinite"/>
 </circle>
 
+
+<!-- ENGINE TEXT -->
 <text x="920" y="120"
-      font-family="Arial" font-size="27"
-      font-weight="700" fill="#FFFFFF">Capture</text>
+      font-family="Arial"
+      font-size="27"
+      font-weight="700"
+      fill="#FFFFFF">Minimize</text>
 
 <text x="920" y="151"
-      font-family="Arial" font-size="27"
-      font-weight="700" fill="#D89BEF">
-  Curvature
+      font-family="Arial"
+      font-size="27"
+      font-weight="700"
+      fill="#D89BEF">
+  Loss
+  <animate attributeName="opacity"
+           values=".7;1;.7"
+           dur="3.5s"
+           repeatCount="indefinite"/>
 </text>
 
-<rect x="920" y="173" width="110" height="5"
-      rx="3" fill="#7440A8"/>
+<rect x="920" y="173"
+      width="110"
+      height="5"
+      rx="3"
+      fill="#7440A8"/>
 
-<rect x="1038" y="173" width="48" height="5"
-      rx="3" fill="#D89BEF"/>
+<rect x="1038" y="173"
+      width="48"
+      height="5"
+      rx="3"
+      fill="#D89BEF"/>
+
 
 <!-- BOTTOM GRAPH -->
-<line x1="770" y1="282" x2="1125" y2="282"
-      stroke="#7440A8" stroke-width="1.5"/>
+<line x1="770" y1="282"
+      x2="1125" y2="282"
+      stroke="#7440A8"
+      stroke-width="1.5"/>
 
-<path d="M775 258
-         C820 290,850 215,900 250
-         C945 285,985 205,1030 235
-         C1060 255,1085 215,1105 230"
+<path d="M775 245
+         C820 250,850 275,880 300
+         C910 325,940 330,970 315
+         C1000 300,1030 275,1060 268
+         C1080 265,1095 270,1105 275"
       fill="none"
       stroke="#7440A8"
       stroke-width="2.5"
@@ -243,53 +389,131 @@
            repeatCount="indefinite"/>
 </path>
 
-<circle cx="775" cy="258" r="6" fill="#7440A8"/>
-<circle cx="850" cy="215" r="6" fill="#A86BD0"/>
-<circle cx="900" cy="250" r="6" fill="#D89BEF"/>
-<circle cx="985" cy="205" r="6" fill="#A86BD0"/>
-<circle cx="1030" cy="235" r="6" fill="#7440A8"/>
-<circle cx="1105" cy="230" r="6" fill="#D89BEF"/>
+<!-- DESCENT POINTS -->
+<circle cx="820" cy="250"
+        r="6"
+        fill="#7440A8"/>
 
-<!-- METRICS -->
-<rect x="760" y="304" width="105" height="58"
-      rx="14" fill="#171020" stroke="#7440A8"/>
+<circle cx="880" cy="300"
+        r="6"
+        fill="#A86BD0"/>
+
+<circle cx="940" cy="330"
+        r="6"
+        fill="#D89BEF"
+        filter="url(#glow)">
+  <animate attributeName="r"
+           values="5;9;5"
+           dur="2s"
+           repeatCount="indefinite"/>
+</circle>
+
+<circle cx="1000" cy="300"
+        r="6"
+        fill="#A86BD0"/>
+
+<circle cx="1060" cy="268"
+        r="6"
+        fill="#7440A8"/>
+
+<circle cx="1105" cy="275"
+        r="6"
+        fill="#D89BEF"/>
+
+
+<!-- METRIC CARDS -->
+<rect x="760" y="304"
+      width="105"
+      height="58"
+      rx="14"
+      fill="#171020"
+      stroke="#7440A8"/>
 
 <text x="780" y="327"
-      font-family="Arial" font-size="10"
-      font-weight="600" fill="#A86BD0">DEGREE</text>
+      font-family="Arial"
+      font-size="10"
+      font-weight="600"
+      fill="#A86BD0">STEP SIZE</text>
 
 <text x="780" y="348"
-      font-family="Arial" font-size="14"
-      font-weight="700" fill="#FFFFFF">x²</text>
+      font-family="Arial"
+      font-size="14"
+      font-weight="700"
+      fill="#FFFFFF">α</text>
 
-<rect x="880" y="304" width="105" height="58"
-      rx="14" fill="#171020" stroke="#A86BD0"/>
+
+<rect x="880" y="304"
+      width="105"
+      height="58"
+      rx="14"
+      fill="#171020"
+      stroke="#A86BD0"/>
 
 <text x="900" y="327"
-      font-family="Arial" font-size="10"
-      font-weight="600" fill="#A86BD0">MODEL</text>
+      font-family="Arial"
+      font-size="10"
+      font-weight="600"
+      fill="#A86BD0">GRADIENT</text>
 
 <text x="900" y="348"
-      font-family="Arial" font-size="14"
-      font-weight="700" fill="#FFFFFF">Curved Fit</text>
+      font-family="Arial"
+      font-size="14"
+      font-weight="700"
+      fill="#FFFFFF">∇J</text>
 
-<rect x="1000" y="304" width="140" height="58"
-      rx="14" fill="#171020" stroke="#D89BEF"/>
+
+<rect x="1000" y="304"
+      width="140"
+      height="58"
+      rx="14"
+      fill="#171020"
+      stroke="#D89BEF"/>
 
 <text x="1020" y="327"
-      font-family="Arial" font-size="10"
-      font-weight="600" fill="#A86BD0">OUTPUT</text>
+      font-family="Arial"
+      font-size="10"
+      font-weight="600"
+      fill="#A86BD0">GOAL</text>
 
 <text x="1020" y="348"
-      font-family="Arial" font-size="14"
-      font-weight="700" fill="#FFFFFF">Prediction</text>
+      font-family="Arial"
+      font-size="14"
+      font-weight="700"
+      fill="#FFFFFF">Minimum Loss</text>
+
 
 <!-- BOTTOM LINE -->
-<line x1="52" y1="392" x2="1140" y2="392"
-      stroke="#7440A8" stroke-width="1" opacity=".6"/>
+<line x1="52" y1="392"
+      x2="1140" y2="392"
+      stroke="#7440A8"
+      stroke-width="1"
+      opacity=".6"/>
 
-<circle cx="1080" cy="392" r="4" fill="#7440A8"/>
-<circle cx="1100" cy="392" r="4" fill="#A86BD0"/>
-<circle cx="1120" cy="392" r="4" fill="#D89BEF"/>
+<circle cx="1080" cy="392"
+        r="4"
+        fill="#7440A8">
+  <animate attributeName="cy"
+           values="392;386;392"
+           dur="2s"
+           repeatCount="indefinite"/>
+</circle>
+
+<circle cx="1100" cy="392"
+        r="4"
+        fill="#A86BD0">
+  <animate attributeName="cy"
+           values="392;384;392"
+           dur="2.5s"
+           repeatCount="indefinite"/>
+</circle>
+
+<circle cx="1120" cy="392"
+        r="4"
+        fill="#D89BEF">
+  <animate attributeName="cy"
+           values="392;386;392"
+           dur="3s"
+           repeatCount="indefinite"/>
+</circle>
 
 </svg>
