@@ -15,752 +15,281 @@
   </filter>
 </defs>
 
-<!-- BACKGROUND -->
 <rect width="1200" height="420" rx="25" fill="url(#bg)"/>
 
-<circle cx="1040" cy="75" r="100"
-        fill="#7440A8" opacity=".07">
-  <animate attributeName="r"
-           values="85;110;85"
-           dur="6s"
-           repeatCount="indefinite"/>
+<circle cx="1040" cy="75" r="100" fill="#7440A8" opacity=".07">
+  <animate attributeName="r" values="85;110;85" dur="6s" repeatCount="indefinite"/>
 </circle>
 
-<!-- BADGE -->
-<rect x="52" y="42"
-      width="118"
-      height="30"
-      rx="16"
-      fill="#7440A8"
-      opacity=".25"
-      stroke="#7440A8">
+<!-- PART -->
+<rect x="52" y="42" width="118" height="30" rx="16"
+      fill="#7440A8" opacity=".25" stroke="#7440A8"/>
 
-  <animate attributeName="opacity"
-           values=".18;.35;.18"
-           dur="4s"
-           repeatCount="indefinite"/>
-</rect>
-
-<text x="111" y="62"
-      text-anchor="middle"
-      font-family="Arial"
-      font-size="11"
-      font-weight="700"
-      letter-spacing="2"
-      fill="#D89BEF">
-  PART E
-</text>
+<text x="111" y="62" text-anchor="middle"
+      font-family="Arial" font-size="11" font-weight="700"
+      letter-spacing="2" fill="#D89BEF">PART F</text>
 
 <!-- TITLE -->
 <text x="52" y="120"
-      font-family="Arial"
-      font-size="34"
-      font-weight="700"
-      fill="#FFFFFF">
-  Multiple Linear
-</text>
+      font-family="Arial" font-size="34"
+      font-weight="700" fill="#FFFFFF">Polynomial</text>
 
 <text x="52" y="162"
-      font-family="Arial"
-      font-size="35"
-      font-weight="700"
-      fill="#D89BEF">
-
+      font-family="Arial" font-size="35"
+      font-weight="700" fill="#D89BEF">
   Regression
-
   <animate attributeName="opacity"
-           values=".75;1;.75"
-           dur="4s"
+           values=".75;1;.75" dur="4s"
            repeatCount="indefinite"/>
 </text>
 
-<!-- TITLE LINE -->
-<rect x="52" y="180"
-      width="78"
-      height="4"
-      rx="2"
-      fill="#7440A8">
+<rect x="52" y="180" width="78" height="4"
+      rx="2" fill="#7440A8"/>
 
-  <animate attributeName="width"
-           values="55;78;55"
-           dur="4s"
-           repeatCount="indefinite"/>
-</rect>
+<rect x="137" y="180" width="37" height="4"
+      rx="2" fill="#D89BEF"/>
 
-<rect x="137" y="180"
-      width="37"
-      height="4"
-      rx="2"
-      fill="#D89BEF"/>
-
-
-<!-- ================================================= -->
-<!-- LEFT: MULTIPLE INPUT → MODEL → OUTPUT -->
-<!-- ================================================= -->
-
-<rect x="52" y="213"
-      width="406"
-      height="146"
-      rx="20"
-      fill="#171020"
-      stroke="#7440A8"
-      stroke-width="1.5">
-
-  <animate attributeName="stroke-opacity"
-           values=".55;1;.55"
-           dur="4s"
-           repeatCount="indefinite"/>
-</rect>
+<!-- LEFT GRAPH -->
+<rect x="52" y="213" width="406" height="146"
+      rx="20" fill="#171020"
+      stroke="#7440A8" stroke-width="1.5"/>
 
 <text x="78" y="240"
-      font-family="Arial"
-      font-size="10"
-      font-weight="600"
-      letter-spacing="1.5"
-      fill="#A86BD0">
-  FEATURE → PREDICTION
-</text>
+      font-family="Arial" font-size="10"
+      font-weight="600" letter-spacing="1.5"
+      fill="#A86BD0">NON-LINEAR RELATIONSHIP</text>
 
-<!-- INPUT X1 -->
-<circle cx="105" cy="275"
-        r="20"
-        fill="#7440A8"
-        filter="url(#glow)">
+<line x1="82" y1="330" x2="430" y2="330"
+      stroke="#7440A8" stroke-width="2"/>
 
-  <animate attributeName="r"
-           values="18;22;18"
-           dur="3s"
-           repeatCount="indefinite"/>
-</circle>
+<line x1="82" y1="330" x2="82" y2="258"
+      stroke="#7440A8" stroke-width="2"/>
 
-<text x="105" y="279"
-      text-anchor="middle"
-      font-family="Arial"
-      font-size="9"
-      font-weight="700"
-      fill="#FFFFFF">
-  X₁
-</text>
-
-<!-- INPUT X2 -->
-<circle cx="105" cy="320"
-        r="20"
-        fill="#A86BD0"
-        filter="url(#glow)">
-
-  <animate attributeName="r"
-           values="18;22;18"
-           dur="3s"
-           begin=".6s"
-           repeatCount="indefinite"/>
-</circle>
-
-<text x="105" y="324"
-      text-anchor="middle"
-      font-family="Arial"
-      font-size="9"
-      font-weight="700"
-      fill="#FFFFFF">
-  X₂
-</text>
-
-<!-- INPUT X3 -->
-<circle cx="190" cy="298"
-        r="20"
-        fill="#D89BEF"
-        filter="url(#glow)">
-
-  <animate attributeName="r"
-           values="18;23;18"
-           dur="3s"
-           begin="1.2s"
-           repeatCount="indefinite"/>
-</circle>
-
-<text x="190" y="302"
-      text-anchor="middle"
-      font-family="Arial"
-      font-size="9"
-      font-weight="700"
-      fill="#12091A">
-  X₃
-</text>
-
-<!-- INPUT CONNECTIONS -->
-<line x1="125" y1="275"
-      x2="170" y2="292"
-      stroke="#7440A8"
-      stroke-width="2"
-      stroke-dasharray="6 5">
-
-  <animate attributeName="stroke-dashoffset"
-           values="0;-22"
-           dur="2s"
-           repeatCount="indefinite"/>
-</line>
-
-<line x1="125" y1="320"
-      x2="170" y2="304"
-      stroke="#A86BD0"
-      stroke-width="2"
-      stroke-dasharray="6 5">
-
-  <animate attributeName="stroke-dashoffset"
-           values="0;-22"
-           dur="2s"
-           repeatCount="indefinite"/>
-</line>
-
-<!-- MODEL -->
-<rect x="230" y="270"
-      width="92"
-      height="56"
-      rx="14"
-      fill="#7440A8"
-      opacity=".85">
-
-  <animate attributeName="opacity"
-           values=".7;1;.7"
-           dur="3s"
-           repeatCount="indefinite"/>
-</rect>
-
-<text x="276" y="294"
-      text-anchor="middle"
-      font-family="Arial"
-      font-size="10"
-      font-weight="700"
-      fill="#FFFFFF">
-  MLR MODEL
-</text>
-
-<text x="276" y="313"
-      text-anchor="middle"
-      font-family="Arial"
-      font-size="9"
-      fill="#D89BEF">
-  β₀ + β₁X₁ + β₂X₂
-</text>
-
-<!-- MODEL → OUTPUT -->
-<line x1="322" y1="298"
-      x2="365" y2="298"
+<!-- POLYNOMIAL CURVE -->
+<path d="M90 275
+         C125 315,155 315,185 288
+         C215 258,245 265,275 300
+         C305 335,340 320,365 282
+         C385 252,405 258,425 270"
+      fill="none"
       stroke="#D89BEF"
-      stroke-width="3"
-      stroke-dasharray="7 5">
-
+      stroke-width="3.5"
+      stroke-linecap="round"
+      stroke-dasharray="520"
+      stroke-dashoffset="520"
+      filter="url(#glow)">
   <animate attributeName="stroke-dashoffset"
-           values="0;-24"
-           dur="1.8s"
+           values="520;0;520"
+           dur="7s"
            repeatCount="indefinite"/>
-</line>
+</path>
 
-<!-- OUTPUT -->
-<circle cx="395" cy="298"
-        r="25"
-        fill="none"
-        stroke="#D89BEF"
-        stroke-width="3"
-        stroke-dasharray="20 8">
+<!-- POINTS -->
+<circle cx="105" cy="290" r="5" fill="#7440A8"/>
+<circle cx="135" cy="310" r="5" fill="#A86BD0"/>
+<circle cx="165" cy="303" r="5" fill="#D89BEF"/>
+<circle cx="205" cy="270" r="5" fill="#A86BD0"/>
 
-  <animateTransform
-      attributeName="transform"
-      type="rotate"
-      from="0 395 298"
-      to="360 395 298"
-      dur="5s"
-      repeatCount="indefinite"/>
-</circle>
-
-<circle cx="395" cy="298"
-        r="13"
-        fill="#D89BEF"
-        filter="url(#glow)">
-
+<circle cx="240" cy="267" r="5"
+        fill="#D89BEF" filter="url(#glow)">
   <animate attributeName="r"
-           values="11;15;11"
-           dur="2s"
+           values="5;8;5" dur="2s"
            repeatCount="indefinite"/>
 </circle>
 
-<text x="395" y="302"
-      text-anchor="middle"
-      font-family="Arial"
-      font-size="9"
-      font-weight="700"
-      fill="#12091A">
-  ŷ
+<circle cx="280" cy="302" r="5" fill="#7440A8"/>
+<circle cx="320" cy="320" r="5" fill="#A86BD0"/>
+<circle cx="360" cy="288" r="5" fill="#D89BEF"/>
+<circle cx="405" cy="260" r="5" fill="#A86BD0"/>
+
+<text x="275" y="252"
+      font-family="Arial" font-size="12"
+      font-weight="700" fill="#FFFFFF">
+  y = β₀ + β₁x + β₂x²
 </text>
 
-<text x="82" y="348"
-      font-family="Arial"
-      font-size="9"
-      fill="#A86BD0">
-  Multiple Inputs
-</text>
-
-<text x="350" y="348"
-      font-family="Arial"
-      font-size="9"
-      fill="#D89BEF">
-  Output
-</text>
-
-
-<!-- ================================================= -->
 <!-- CENTER FLOW -->
-<!-- ================================================= -->
-
 <text x="500" y="78"
-      font-family="Arial"
-      font-size="10"
-      font-weight="600"
-      letter-spacing="2"
-      fill="#A86BD0">
-  MLR FLOW
-</text>
+      font-family="Arial" font-size="10"
+      font-weight="600" letter-spacing="2"
+      fill="#A86BD0">POLYNOMIAL FLOW</text>
 
-<line x1="515" y1="106"
-      x2="515" y2="320"
-      stroke="#7440A8"
-      stroke-width="2"
-      stroke-dasharray="8 8">
+<line x1="515" y1="106" x2="515" y2="320"
+      stroke="#7440A8" stroke-width="2"
+      stroke-dasharray="8 8"/>
 
-  <animate attributeName="stroke-dashoffset"
-           values="0;-32"
-           dur="2s"
-           repeatCount="indefinite"/>
-</line>
-
-<!-- 01 -->
-<circle cx="515" cy="108"
-        r="19"
-        fill="#7440A8"
-        filter="url(#glow)">
-
-  <animate attributeName="r"
-           values="18;22;18"
-           dur="4s"
-           repeatCount="indefinite"/>
-</circle>
-
-<text x="515" y="112"
-      text-anchor="middle"
-      font-family="Arial"
-      font-size="10"
-      font-weight="700"
-      fill="#FFFFFF">
-  01
-</text>
-
+<circle cx="515" cy="108" r="19"
+        fill="#7440A8" filter="url(#glow)"/>
+<text x="515" y="112" text-anchor="middle"
+      font-family="Arial" font-size="10"
+      font-weight="700" fill="#FFFFFF">01</text>
 <text x="550" y="113"
-      font-family="Arial"
-      font-size="14"
-      font-weight="700"
-      fill="#FFFFFF">
-  Features
-</text>
+      font-family="Arial" font-size="14"
+      font-weight="700" fill="#FFFFFF">Input X</text>
 
-<!-- 02 -->
-<circle cx="515" cy="178"
-        r="19"
-        fill="#A86BD0"
-        filter="url(#glow)">
-
-  <animate attributeName="r"
-           values="18;22;18"
-           dur="4s"
-           begin=".8s"
-           repeatCount="indefinite"/>
-</circle>
-
-<text x="515" y="182"
-      text-anchor="middle"
-      font-family="Arial"
-      font-size="10"
-      font-weight="700"
-      fill="#FFFFFF">
-  02
-</text>
-
+<circle cx="515" cy="178" r="19"
+        fill="#A86BD0" filter="url(#glow)"/>
+<text x="515" y="182" text-anchor="middle"
+      font-family="Arial" font-size="10"
+      font-weight="700" fill="#FFFFFF">02</text>
 <text x="550" y="183"
-      font-family="Arial"
-      font-size="14"
-      font-weight="700"
-      fill="#FFFFFF">
-  Fit Model
-</text>
+      font-family="Arial" font-size="14"
+      font-weight="700" fill="#FFFFFF">Add Polynomial</text>
 
-<!-- 03 -->
-<circle cx="515" cy="248"
-        r="19"
-        fill="#7440A8"
-        filter="url(#glow)">
-
-  <animate attributeName="r"
-           values="18;22;18"
-           dur="4s"
-           begin="1.6s"
-           repeatCount="indefinite"/>
-</circle>
-
-<text x="515" y="252"
-      text-anchor="middle"
-      font-family="Arial"
-      font-size="10"
-      font-weight="700"
-      fill="#FFFFFF">
-  03
-</text>
-
+<circle cx="515" cy="248" r="19"
+        fill="#7440A8" filter="url(#glow)"/>
+<text x="515" y="252" text-anchor="middle"
+      font-family="Arial" font-size="10"
+      font-weight="700" fill="#FFFFFF">03</text>
 <text x="550" y="253"
-      font-family="Arial"
-      font-size="14"
-      font-weight="700"
-      fill="#FFFFFF">
-  Predict
-</text>
+      font-family="Arial" font-size="14"
+      font-weight="700" fill="#FFFFFF">Fit Curve</text>
 
-<!-- 04 -->
-<circle cx="515" cy="318"
-        r="19"
-        fill="#D89BEF"
-        filter="url(#glow)">
-
-  <animate attributeName="r"
-           values="18;22;18"
-           dur="4s"
-           begin="2.4s"
-           repeatCount="indefinite"/>
-</circle>
-
-<text x="515" y="322"
-      text-anchor="middle"
-      font-family="Arial"
-      font-size="10"
-      font-weight="700"
-      fill="#FFFFFF">
-  04
-</text>
-
+<circle cx="515" cy="318" r="19"
+        fill="#D89BEF" filter="url(#glow)"/>
+<text x="515" y="322" text-anchor="middle"
+      font-family="Arial" font-size="10"
+      font-weight="700" fill="#FFFFFF">04</text>
 <text x="550" y="323"
-      font-family="Arial"
-      font-size="14"
-      font-weight="700"
-      fill="#FFFFFF">
-  Evaluate
-</text>
+      font-family="Arial" font-size="14"
+      font-weight="700" fill="#FFFFFF">Predict</text>
 
-
-<!-- ================================================= -->
-<!-- RIGHT MODEL CARD -->
-<!-- ================================================= -->
-
-<rect x="760" y="45"
-      width="380"
-      height="176"
-      rx="22"
-      fill="#171020"
-      stroke="#A86BD0"
-      stroke-width="1.5">
-
-  <animate attributeName="stroke-opacity"
-           values=".55;1;.55"
-           dur="5s"
-           repeatCount="indefinite"/>
-</rect>
+<!-- RIGHT ENGINE -->
+<rect x="760" y="45" width="380" height="176"
+      rx="22" fill="#171020"
+      stroke="#A86BD0" stroke-width="1.5"/>
 
 <text x="950" y="80"
       text-anchor="middle"
-      font-family="Arial"
-      font-size="10"
-      font-weight="600"
-      letter-spacing="2"
-      fill="#A86BD0">
-  MULTI-LINEAR MODEL
-</text>
+      font-family="Arial" font-size="10"
+      font-weight="600" letter-spacing="2"
+      fill="#A86BD0">POLYNOMIAL ENGINE</text>
 
-<!-- MODEL CORE -->
-<circle cx="835" cy="133"
-        r="40"
+<!-- ROUND RING — INNER LINE REMOVED -->
+<circle cx="835" cy="133" r="40"
         fill="none"
         stroke="#7440A8"
         stroke-width="9"
         stroke-dasharray="95 35">
 
   <animateTransform
-      attributeName="transform"
-      type="rotate"
-      from="0 835 133"
-      to="360 835 133"
-      dur="10s"
-      repeatCount="indefinite"/>
+    attributeName="transform"
+    type="rotate"
+    from="0 835 133"
+    to="360 835 133"
+    dur="10s"
+    repeatCount="indefinite"/>
 </circle>
 
-<circle cx="835" cy="133"
-        r="12"
+<!-- CENTER DOT ONLY -->
+<circle cx="835" cy="133" r="11"
         fill="#D89BEF"
         filter="url(#glow)">
-
   <animate attributeName="r"
-           values="10;15;10"
+           values="9;14;9"
            dur="2.5s"
            repeatCount="indefinite"/>
 </circle>
 
-<!-- FEATURE NODES -->
-<circle cx="835" cy="93"
-        r="5"
-        fill="#A86BD0"/>
+<circle cx="835" cy="93" r="5" fill="#A86BD0"/>
 
-<circle cx="795" cy="93"
-        r="4"
-        fill="#D89BEF">
-
+<circle cx="795" cy="93" r="4" fill="#D89BEF">
   <animate attributeName="cy"
            values="93;85;93"
            dur="2.5s"
            repeatCount="indefinite"/>
 </circle>
 
-<circle cx="891" cy="157"
-        r="4"
-        fill="#7440A8">
-
+<circle cx="891" cy="157" r="4" fill="#7440A8">
   <animate attributeName="cy"
            values="157;165;157"
            dur="3s"
            repeatCount="indefinite"/>
 </circle>
 
-<!-- FORMULA -->
-<text x="905" y="120"
-      font-family="Arial"
-      font-size="23"
-      font-weight="700"
-      fill="#FFFFFF">
-  ŷ = b₀ + b₁X₁
+<text x="920" y="120"
+      font-family="Arial" font-size="27"
+      font-weight="700" fill="#FFFFFF">Capture</text>
+
+<text x="920" y="151"
+      font-family="Arial" font-size="27"
+      font-weight="700" fill="#D89BEF">
+  Curvature
 </text>
 
-<text x="905" y="151"
-      font-family="Arial"
-      font-size="23"
-      font-weight="700"
-      fill="#D89BEF">
+<rect x="920" y="173" width="110" height="5"
+      rx="3" fill="#7440A8"/>
 
-  + b₂X₂ + … + bₙXₙ
+<rect x="1038" y="173" width="48" height="5"
+      rx="3" fill="#D89BEF"/>
 
-  <animate attributeName="opacity"
-           values=".7;1;.7"
-           dur="3.5s"
-           repeatCount="indefinite"/>
-</text>
-
-<rect x="905" y="173"
-      width="105"
-      height="5"
-      rx="3"
-      fill="#7440A8">
-
-  <animate attributeName="width"
-           values="75;105;75"
-           dur="4s"
-           repeatCount="indefinite"/>
-</rect>
-
-<rect x="1018" y="173"
-      width="48"
-      height="5"
-      rx="3"
-      fill="#D89BEF"/>
-
-
-<!-- ================================================= -->
 <!-- BOTTOM GRAPH -->
-<!-- ================================================= -->
+<line x1="770" y1="282" x2="1125" y2="282"
+      stroke="#7440A8" stroke-width="1.5"/>
 
-<line x1="770" y1="282"
-      x2="1125" y2="282"
-      stroke="#7440A8"
-      stroke-width="1.5"/>
-
-<polyline
-      points="775,255 835,270 900,238 965,258 1030,225 1105,242"
+<path d="M775 258
+         C820 290,850 215,900 250
+         C945 285,985 205,1030 235
+         C1060 255,1085 215,1105 230"
       fill="none"
       stroke="#7440A8"
-      stroke-width="2"
-      stroke-dasharray="450"
-      stroke-dashoffset="450">
+      stroke-width="2.5"
+      stroke-dasharray="500"
+      stroke-dashoffset="500">
 
   <animate attributeName="stroke-dashoffset"
-           values="450;0;450"
+           values="500;0;500"
            dur="8s"
            repeatCount="indefinite"/>
-</polyline>
+</path>
 
-<circle cx="775" cy="255"
-        r="6"
-        fill="#7440A8"/>
+<circle cx="775" cy="258" r="6" fill="#7440A8"/>
+<circle cx="850" cy="215" r="6" fill="#A86BD0"/>
+<circle cx="900" cy="250" r="6" fill="#D89BEF"/>
+<circle cx="985" cy="205" r="6" fill="#A86BD0"/>
+<circle cx="1030" cy="235" r="6" fill="#7440A8"/>
+<circle cx="1105" cy="230" r="6" fill="#D89BEF"/>
 
-<circle cx="835" cy="270"
-        r="6"
-        fill="#A86BD0"/>
-
-<circle cx="900" cy="238"
-        r="6"
-        fill="#D89BEF"
-        filter="url(#glow)">
-
-  <animate attributeName="r"
-           values="5;9;5"
-           dur="2s"
-           repeatCount="indefinite"/>
-</circle>
-
-<circle cx="965" cy="258"
-        r="6"
-        fill="#A86BD0"/>
-
-<circle cx="1030" cy="225"
-        r="6"
-        fill="#7440A8"/>
-
-<circle cx="1105" cy="242"
-        r="6"
-        fill="#D89BEF">
-
-  <animate attributeName="cy"
-           values="242;233;242"
-           dur="3s"
-           repeatCount="indefinite"/>
-</circle>
-
-
-<!-- ================================================= -->
-<!-- BOTTOM CARDS -->
-<!-- ================================================= -->
-
-<rect x="760" y="304"
-      width="105"
-      height="58"
-      rx="14"
-      fill="#171020"
-      stroke="#7440A8"/>
+<!-- METRICS -->
+<rect x="760" y="304" width="105" height="58"
+      rx="14" fill="#171020" stroke="#7440A8"/>
 
 <text x="780" y="327"
-      font-family="Arial"
-      font-size="10"
-      font-weight="600"
-      fill="#A86BD0">
-  FEATURES
-</text>
+      font-family="Arial" font-size="10"
+      font-weight="600" fill="#A86BD0">DEGREE</text>
 
 <text x="780" y="348"
-      font-family="Arial"
-      font-size="14"
-      font-weight="700"
-      fill="#FFFFFF">
-  Multiple X
-</text>
+      font-family="Arial" font-size="14"
+      font-weight="700" fill="#FFFFFF">x²</text>
 
-
-<rect x="880" y="304"
-      width="105"
-      height="58"
-      rx="14"
-      fill="#171020"
-      stroke="#A86BD0"/>
+<rect x="880" y="304" width="105" height="58"
+      rx="14" fill="#171020" stroke="#A86BD0"/>
 
 <text x="900" y="327"
-      font-family="Arial"
-      font-size="10"
-      font-weight="600"
-      fill="#A86BD0">
-  MODEL
-</text>
+      font-family="Arial" font-size="10"
+      font-weight="600" fill="#A86BD0">MODEL</text>
 
 <text x="900" y="348"
-      font-family="Arial"
-      font-size="14"
-      font-weight="700"
-      fill="#FFFFFF">
-  Coefficients
-</text>
+      font-family="Arial" font-size="14"
+      font-weight="700" fill="#FFFFFF">Curved Fit</text>
 
-
-<rect x="1000" y="304"
-      width="140"
-      height="58"
-      rx="14"
-      fill="#171020"
-      stroke="#D89BEF"/>
+<rect x="1000" y="304" width="140" height="58"
+      rx="14" fill="#171020" stroke="#D89BEF"/>
 
 <text x="1020" y="327"
-      font-family="Arial"
-      font-size="10"
-      font-weight="600"
-      fill="#A86BD0">
-  OUTPUT
-</text>
+      font-family="Arial" font-size="10"
+      font-weight="600" fill="#A86BD0">OUTPUT</text>
 
 <text x="1020" y="348"
-      font-family="Arial"
-      font-size="14"
-      font-weight="700"
-      fill="#FFFFFF">
-  Prediction
-</text>
-
+      font-family="Arial" font-size="14"
+      font-weight="700" fill="#FFFFFF">Prediction</text>
 
 <!-- BOTTOM LINE -->
-<line x1="52" y1="392"
-      x2="1140" y2="392"
-      stroke="#7440A8"
-      stroke-width="1"
-      opacity=".6"/>
+<line x1="52" y1="392" x2="1140" y2="392"
+      stroke="#7440A8" stroke-width="1" opacity=".6"/>
 
-<circle cx="1080" cy="392"
-        r="4"
-        fill="#7440A8">
-  <animate attributeName="cy"
-           values="392;386;392"
-           dur="2s"
-           repeatCount="indefinite"/>
-</circle>
-
-<circle cx="1100" cy="392"
-        r="4"
-        fill="#A86BD0">
-  <animate attributeName="cy"
-           values="392;384;392"
-           dur="2.5s"
-           repeatCount="indefinite"/>
-</circle>
-
-<circle cx="1120" cy="392"
-        r="4"
-        fill="#D89BEF">
-  <animate attributeName="cy"
-           values="392;386;392"
-           dur="3s"
-           repeatCount="indefinite"/>
-</circle>
-
-<!-- FLOATING PARTICLE -->
-<circle cx="730" cy="298"
-        r="7"
-        fill="#D89BEF"
-        filter="url(#glow)">
-
-  <animate attributeName="cy"
-           values="298;280;298"
-           dur="3s"
-           repeatCount="indefinite"/>
-
-  <animate attributeName="opacity"
-           values=".3;1;.3"
-           dur="3s"
-           repeatCount="indefinite"/>
-</circle>
+<circle cx="1080" cy="392" r="4" fill="#7440A8"/>
+<circle cx="1100" cy="392" r="4" fill="#A86BD0"/>
+<circle cx="1120" cy="392" r="4" fill="#D89BEF"/>
 
 </svg>
