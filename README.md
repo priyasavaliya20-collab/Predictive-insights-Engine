@@ -11,13 +11,8 @@ Build and compare regression models — Simple Linear, Multiple Linear, and Poly
 
 ## ♻️ Workflow
 
-```
-Data Loading & EDA → Train/Test Split → Simple Linear Regression
-        → Assumption Validation → Evaluation Metrics
-        → Multiple Linear Regression → Polynomial Regression
-        → Gradient Descent (Batch / SGD / Mini-Batch)
-        → Bias–Variance Diagnostics → Final Model Selection & Reporting
-```
+
+<img width="1600" height="1000" alt="f" src="https://github.com/user-attachments/assets/f99e4c6c-1668-4a26-b48b-7dde4d59698e" />
 
 ---
 
