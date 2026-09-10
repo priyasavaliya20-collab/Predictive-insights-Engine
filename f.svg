@@ -1,441 +1,740 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420">
+ <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420">
 
 <defs>
-  <linearGradient id="bgH" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0%" stop-color="#12091A"/>
-    <stop offset="100%" stop-color="#1D1028"/>
+
+  <!-- BACKGROUND -->
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#0B0611"/>
+    <stop offset="50%" stop-color="#171021"/>
+    <stop offset="100%" stop-color="#261333"/>
   </linearGradient>
 
-  <filter id="glowH">
-    <feGaussianBlur stdDeviation="4" result="blur"/>
+  <!-- PREMIUM CARD -->
+  <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#251832"/>
+    <stop offset="100%" stop-color="#130D1B"/>
+  </linearGradient>
+
+  <!-- PURPLE ACCENT -->
+  <linearGradient id="purple" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#7440A8"/>
+    <stop offset="50%" stop-color="#A86BD0"/>
+    <stop offset="100%" stop-color="#D89BEF"/>
+  </linearGradient>
+
+  <!-- VERTICAL ACCENT -->
+  <linearGradient id="purpleV" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#D89BEF"/>
+    <stop offset="100%" stop-color="#7440A8"/>
+  </linearGradient>
+
+  <!-- GLOW -->
+  <filter id="glow">
+    <feGaussianBlur stdDeviation="5" result="blur"/>
     <feMerge>
       <feMergeNode in="blur"/>
       <feMergeNode in="SourceGraphic"/>
     </feMerge>
   </filter>
+
+  <filter id="bigGlow">
+    <feGaussianBlur stdDeviation="12"/>
+  </filter>
+
 </defs>
 
-<!-- BACKGROUND -->
-<rect width="1200" height="420" rx="25" fill="url(#bgH)"/>
 
-<circle cx="1050" cy="75" r="105" fill="#7440A8" opacity=".07">
+<!-- ================================================= -->
+<!-- BACKGROUND -->
+<!-- ================================================= -->
+
+<rect width="1200" height="420" rx="28" fill="url(#bg)"/>
+
+<!-- ambient premium glow -->
+<circle cx="1040" cy="80" r="150"
+        fill="#A86BD0"
+        opacity=".045"
+        filter="url(#bigGlow)">
   <animate attributeName="r"
-           values="85;110;85"
-           dur="6s"
+           values="130;165;130"
+           dur="8s"
            repeatCount="indefinite"/>
 </circle>
 
-<!-- PART H -->
-<rect x="52" y="42" width="118" height="30" rx="16"
-      fill="#7440A8" opacity=".25" stroke="#7440A8"/>
-
-<text x="111" y="62"
-      text-anchor="middle"
-      font-family="Arial"
-      font-size="11"
-      font-weight="700"
-      letter-spacing="2"
-      fill="#D89BEF">PART H</text>
-
-<!-- TITLE -->
-<text x="52" y="120"
-      font-family="Arial"
-      font-size="31"
-      font-weight="700"
-      fill="#FFFFFF">Bias–Variance</text>
-
-<text x="52" y="162"
-      font-family="Arial"
-      font-size="33"
-      font-weight="700"
-      fill="#D89BEF">Model Diagnostics</text>
-
-<rect x="52" y="180" width="78" height="4"
-      rx="2" fill="#7440A8"/>
-
-<rect x="137" y="180" width="37" height="4"
-      rx="2" fill="#D89BEF"/>
+<circle cx="620" cy="390" r="130"
+        fill="#7440A8"
+        opacity=".035"
+        filter="url(#bigGlow)"/>
 
 
-<!-- LEFT: BIAS VARIANCE -->
-<rect x="52" y="213" width="406" height="146"
-      rx="20" fill="#171020"
-      stroke="#7440A8" stroke-width="1.5"/>
+<!-- ================================================= -->
+<!-- HEADER -->
+<!-- ================================================= -->
 
-<text x="78" y="240"
-      font-family="Arial"
-      font-size="10"
-      font-weight="600"
-      letter-spacing="1.5"
-      fill="#A86BD0">BIAS ↔ VARIANCE</text>
+<rect x="52" y="38"
+      width="110"
+      height="28"
+      rx="14"
+      fill="#7440A8"
+      opacity=".15"
+      stroke="#7440A8"/>
 
-<!-- Balance line -->
-<line x1="95" y1="330" x2="415" y2="330"
-      stroke="#7440A8" stroke-width="2"/>
-
-<!-- Bias curve -->
-<path d="M100 275
-         C145 280,185 295,225 315
-         C260 330,300 335,335 330"
-      fill="none"
-      stroke="#7440A8"
-      stroke-width="3"
-      stroke-linecap="round"/>
-
-<!-- Variance curve -->
-<path d="M100 330
-         C140 330,180 325,220 315
-         C265 300,310 275,350 260
-         C380 250,400 248,420 250"
-      fill="none"
-      stroke="#D89BEF"
-      stroke-width="3"
-      stroke-linecap="round"/>
-
-<!-- Total error -->
-<path d="M100 290
-         C150 285,190 292,225 310
-         C260 325,295 320,330 290
-         C365 265,395 255,420 258"
-      fill="none"
-      stroke="#A86BD0"
-      stroke-width="2"
-      stroke-dasharray="7 5"/>
-
-<!-- Optimal point -->
-<circle cx="225" cy="315" r="7"
+<circle cx="68" cy="52" r="3"
         fill="#D89BEF"
-        filter="url(#glowH)">
-  <animate attributeName="r"
-           values="6;10;6"
+        filter="url(#glow)">
+  <animate attributeName="opacity"
+           values=".3;1;.3"
            dur="2s"
            repeatCount="indefinite"/>
 </circle>
 
-<line x1="225" y1="315" x2="225" y2="330"
-      stroke="#D89BEF"
-      stroke-width="1"
-      stroke-dasharray="3 3"/>
+<text x="82" y="56"
+      font-family="Arial"
+      font-size="10"
+      font-weight="700"
+      letter-spacing="2"
+      fill="#D89BEF">
+  PART I
+</text>
 
-<text x="193" y="350"
+
+<!-- TITLE -->
+
+<text x="52" y="111"
+      font-family="Arial"
+      font-size="32"
+      font-weight="700"
+      fill="#FFFFFF">
+  Final Analysis
+</text>
+
+<text x="52" y="150"
+      font-family="Arial"
+      font-size="34"
+      font-weight="700"
+      fill="#D89BEF">
+  &amp; Reporting
+  <animate attributeName="opacity"
+           values=".75;1;.75"
+           dur="4s"
+           repeatCount="indefinite"/>
+</text>
+
+<rect x="52" y="170"
+      width="150"
+      height="3"
+      rx="2"
+      fill="url(#purple)">
+  <animate attributeName="width"
+           values="100;150;100"
+           dur="4s"
+           repeatCount="indefinite"/>
+</rect>
+
+
+<!-- ================================================= -->
+<!-- LEFT: INSIGHT PANEL -->
+<!-- ================================================= -->
+
+<rect x="52" y="200"
+      width="405"
+      height="160"
+      rx="24"
+      fill="url(#card)"
+      stroke="#3D2850"
+      stroke-width="1"/>
+
+<!-- premium edge -->
+<rect x="52" y="200"
+      width="4"
+      height="160"
+      rx="2"
+      fill="url(#purpleV)"/>
+
+<text x="78" y="228"
       font-family="Arial"
       font-size="9"
       font-weight="700"
-      fill="#D89BEF">BALANCE</text>
-
-<text x="95" y="265"
-      font-family="Arial"
-      font-size="10"
-      fill="#A86BD0">Bias</text>
-
-<text x="370" y="245"
-      font-family="Arial"
-      font-size="10"
-      fill="#D89BEF">Variance</text>
-
-
-<!-- CENTER FLOW -->
-<text x="500" y="78"
-      font-family="Arial"
-      font-size="10"
-      font-weight="600"
       letter-spacing="2"
-      fill="#A86BD0">MODEL DIAGNOSTICS</text>
+      fill="#A86BD0">
+  EXECUTIVE INSIGHTS
+</text>
 
-<line x1="515" y1="106" x2="515" y2="320"
-      stroke="#7440A8"
-      stroke-width="2"
-      stroke-dasharray="8 8">
+
+<!-- chart container -->
+
+<rect x="78" y="245"
+      width="165"
+      height="94"
+      rx="14"
+      fill="#0E0914"
+      stroke="#34213F"/>
+
+<text x="94" y="263"
+      font-family="Arial"
+      font-size="8"
+      font-weight="600"
+      fill="#796A83">
+  PERFORMANCE
+</text>
+
+<!-- chart grid -->
+
+<line x1="94" y1="318"
+      x2="227" y2="318"
+      stroke="#302039"
+      stroke-width="1"/>
+
+<line x1="94" y1="290"
+      x2="227" y2="290"
+      stroke="#24172F"
+      stroke-width="1"/>
+
+<line x1="94" y1="275"
+      x2="227" y2="275"
+      stroke="#24172F"
+      stroke-width="1"/>
+
+
+<!-- bars -->
+
+<rect x="103" y="301"
+      width="20"
+      height="17"
+      rx="4"
+      fill="#7440A8"/>
+
+<rect x="134" y="287"
+      width="20"
+      height="31"
+      rx="4"
+      fill="#8E56BC"/>
+
+<rect x="165" y="270"
+      width="20"
+      height="48"
+      rx="4"
+      fill="#A86BD0"/>
+
+<rect x="196" y="280"
+      width="20"
+      height="38"
+      rx="4"
+      fill="#D89BEF">
+  <animate attributeName="height"
+           values="30;38;30"
+           dur="3s"
+           repeatCount="indefinite"/>
+  <animate attributeName="y"
+           values="288;280;288"
+           dur="3s"
+           repeatCount="indefinite"/>
+</rect>
+
+
+<!-- insight information -->
+
+<circle cx="274" cy="260" r="5"
+        fill="#D89BEF"
+        filter="url(#glow)"/>
+
+<text x="288" y="264"
+      font-family="Arial"
+      font-size="12"
+      font-weight="700"
+      fill="#FFFFFF">
+  Key Findings
+</text>
+
+<line x1="274" y1="279"
+      x2="420" y2="279"
+      stroke="#352340"/>
+
+<circle cx="276" cy="296" r="3"
+        fill="#7440A8"/>
+
+<text x="288" y="300"
+      font-family="Arial"
+      font-size="9"
+      fill="#AFA3B6">
+  Patterns identified
+</text>
+
+<circle cx="276" cy="316" r="3"
+        fill="#A86BD0"/>
+
+<text x="288" y="320"
+      font-family="Arial"
+      font-size="9"
+      fill="#AFA3B6">
+  Results validated
+</text>
+
+<circle cx="276" cy="336" r="3"
+        fill="#D89BEF"/>
+
+<text x="288" y="340"
+      font-family="Arial"
+      font-size="9"
+      fill="#AFA3B6">
+  Decisions supported
+</text>
+
+
+<!-- ================================================= -->
+<!-- CENTER: PREMIUM FLOW -->
+<!-- ================================================= -->
+
+<text x="500" y="65"
+      font-family="Arial"
+      font-size="9"
+      font-weight="700"
+      letter-spacing="2.2"
+      fill="#A86BD0">
+  REPORTING FLOW
+</text>
+
+<!-- flow line -->
+
+<line x1="518" y1="91"
+      x2="518" y2="329"
+      stroke="#3B2748"
+      stroke-width="2"/>
+
+<line x1="518" y1="91"
+      x2="518" y2="329"
+      stroke="#A86BD0"
+      stroke-width="1"
+      stroke-dasharray="4 10"
+      opacity=".65">
+
   <animate attributeName="stroke-dashoffset"
-           values="0;-32"
+           values="0;-28"
            dur="2s"
            repeatCount="indefinite"/>
 </line>
 
-<!-- 01 -->
-<circle cx="515" cy="108" r="19"
-        fill="#7440A8" filter="url(#glowH)"/>
 
-<text x="515" y="112"
-      text-anchor="middle"
-      font-family="Arial"
-      font-size="10"
-      font-weight="700"
-      fill="#FFFFFF">01</text>
+<!-- STEP 01 -->
 
-<text x="550" y="113"
-      font-family="Arial"
-      font-size="14"
-      font-weight="700"
-      fill="#FFFFFF">Check Bias</text>
-
-<!-- 02 -->
-<circle cx="515" cy="178" r="19"
-        fill="#A86BD0" filter="url(#glowH)"/>
-
-<text x="515" y="182"
-      text-anchor="middle"
-      font-family="Arial"
-      font-size="10"
-      font-weight="700"
-      fill="#FFFFFF">02</text>
-
-<text x="550" y="183"
-      font-family="Arial"
-      font-size="14"
-      font-weight="700"
-      fill="#FFFFFF">Check Variance</text>
-
-<!-- 03 -->
-<circle cx="515" cy="248" r="19"
-        fill="#7440A8" filter="url(#glowH)"/>
-
-<text x="515" y="252"
-      text-anchor="middle"
-      font-family="Arial"
-      font-size="10"
-      font-weight="700"
-      fill="#FFFFFF">03</text>
-
-<text x="550" y="253"
-      font-family="Arial"
-      font-size="14"
-      font-weight="700"
-      fill="#FFFFFF">Detect Overfit</text>
-
-<!-- 04 -->
-<circle cx="515" cy="318" r="19"
-        fill="#D89BEF" filter="url(#glowH)"/>
-
-<text x="515" y="322"
-      text-anchor="middle"
-      font-family="Arial"
-      font-size="10"
-      font-weight="700"
-      fill="#FFFFFF">04</text>
-
-<text x="550" y="323"
-      font-family="Arial"
-      font-size="14"
-      font-weight="700"
-      fill="#FFFFFF">Diagnose Model</text>
-
-
-<!-- RIGHT DIAGNOSTIC ENGINE -->
-<rect x="760" y="45" width="380" height="176"
-      rx="22" fill="#171020"
-      stroke="#A86BD0" stroke-width="1.5"/>
-
-<text x="950" y="80"
-      text-anchor="middle"
-      font-family="Arial"
-      font-size="10"
-      font-weight="600"
-      letter-spacing="2"
-      fill="#A86BD0">DIAGNOSTIC ENGINE</text>
-
-<!-- ROUND RING -->
-<circle cx="835" cy="133" r="40"
-        fill="none"
+<circle cx="518" cy="96"
+        r="17"
+        fill="#120B18"
         stroke="#7440A8"
-        stroke-width="9"
-        stroke-dasharray="95 35">
+        stroke-width="2"/>
+
+<text x="518" y="100"
+      text-anchor="middle"
+      font-family="Arial"
+      font-size="9"
+      font-weight="700"
+      fill="#D89BEF">
+  01
+</text>
+
+<text x="550" y="101"
+      font-family="Arial"
+      font-size="13"
+      font-weight="700"
+      fill="#FFFFFF">
+  Analyze Results
+</text>
+
+
+<!-- STEP 02 -->
+
+<circle cx="518" cy="166"
+        r="17"
+        fill="#120B18"
+        stroke="#A86BD0"
+        stroke-width="2"/>
+
+<text x="518" y="170"
+      text-anchor="middle"
+      font-family="Arial"
+      font-size="9"
+      font-weight="700"
+      fill="#D89BEF">
+  02
+</text>
+
+<text x="550" y="171"
+      font-family="Arial"
+      font-size="13"
+      font-weight="700"
+      fill="#FFFFFF">
+  Extract Insights
+</text>
+
+
+<!-- STEP 03 -->
+
+<circle cx="518" cy="236"
+        r="17"
+        fill="#120B18"
+        stroke="#7440A8"
+        stroke-width="2"/>
+
+<text x="518" y="240"
+      text-anchor="middle"
+      font-family="Arial"
+      font-size="9"
+      font-weight="700"
+      fill="#D89BEF">
+  03
+</text>
+
+<text x="550" y="241"
+      font-family="Arial"
+      font-size="13"
+      font-weight="700"
+      fill="#FFFFFF">
+  Build Report
+</text>
+
+
+<!-- STEP 04 -->
+
+<circle cx="518" cy="306"
+        r="17"
+        fill="#D89BEF"
+        filter="url(#glow)"/>
+
+<text x="518" y="310"
+      text-anchor="middle"
+      font-family="Arial"
+      font-size="9"
+      font-weight="700"
+      fill="#160D1D">
+  04
+</text>
+
+<text x="550" y="311"
+      font-family="Arial"
+      font-size="13"
+      font-weight="700"
+      fill="#FFFFFF">
+  Communicate
+</text>
+
+
+<!-- ================================================= -->
+<!-- RIGHT: REPORTING ENGINE -->
+<!-- ================================================= -->
+
+<rect x="760" y="38"
+      width="380"
+      height="185"
+      rx="25"
+      fill="url(#card)"
+      stroke="#493058"
+      stroke-width="1"/>
+
+<!-- top premium line -->
+
+<rect x="760" y="38"
+      width="380"
+      height="2"
+      rx="1"
+      fill="url(#purple)"/>
+
+<text x="950" y="70"
+      text-anchor="middle"
+      font-family="Arial"
+      font-size="9"
+      font-weight="700"
+      letter-spacing="2.4"
+      fill="#A86BD0">
+  REPORTING ENGINE
+</text>
+
+
+<!-- circular engine -->
+
+<circle cx="835" cy="132"
+        r="48"
+        fill="#0D0812"
+        stroke="#30203D"
+        stroke-width="1"/>
+
+<!-- rotating ring -->
+
+<circle cx="835" cy="132"
+        r="38"
+        fill="none"
+        stroke="url(#purple)"
+        stroke-width="7"
+        stroke-dasharray="78 30"
+        stroke-linecap="round">
 
   <animateTransform
     attributeName="transform"
     type="rotate"
-    from="0 835 133"
-    to="360 835 133"
-    dur="10s"
+    from="0 835 132"
+    to="360 835 132"
+    dur="11s"
     repeatCount="indefinite"/>
 </circle>
 
-<!-- CENTER DOT ONLY -->
-<circle cx="835" cy="133" r="11"
+<!-- inner glow -->
+
+<circle cx="835" cy="132"
+        r="14"
+        fill="#7440A8"
+        opacity=".22"
+        filter="url(#bigGlow)"/>
+
+<!-- CENTER DOT -->
+
+<circle cx="835" cy="132"
+        r="7"
         fill="#D89BEF"
-        filter="url(#glowH)">
+        filter="url(#glow)">
+
   <animate attributeName="r"
-           values="9;14;9"
+           values="6;9;6"
            dur="2.5s"
            repeatCount="indefinite"/>
 </circle>
 
-<circle cx="835" cy="93" r="5" fill="#A86BD0"/>
+<!-- orbit dots -->
 
-<circle cx="795" cy="93" r="4" fill="#D89BEF">
+<circle cx="835" cy="88"
+        r="3.5"
+        fill="#D89BEF"/>
+
+<circle cx="796" cy="111"
+        r="3"
+        fill="#A86BD0">
   <animate attributeName="cy"
-           values="93;85;93"
+           values="111;103;111"
            dur="2.5s"
            repeatCount="indefinite"/>
 </circle>
 
-<circle cx="891" cy="157" r="4" fill="#7440A8">
+<circle cx="873" cy="155"
+        r="3"
+        fill="#7440A8">
   <animate attributeName="cy"
-           values="157;165;157"
+           values="155;163;155"
            dur="3s"
            repeatCount="indefinite"/>
 </circle>
 
-<!-- ENGINE TEXT -->
-<text x="920" y="120"
-      font-family="Arial"
-      font-size="27"
-      font-weight="700"
-      fill="#FFFFFF">Balance</text>
 
-<text x="920" y="151"
+<!-- engine typography -->
+
+<text x="905" y="112"
       font-family="Arial"
-      font-size="27"
+      font-size="25"
       font-weight="700"
-      fill="#D89BEF">
-  Generalization
-  <animate attributeName="opacity"
-           values=".7;1;.7"
-           dur="3.5s"
-           repeatCount="indefinite"/>
+      fill="#FFFFFF">
+  Insights
 </text>
 
-<rect x="920" y="173" width="110" height="5"
-      rx="3" fill="#7440A8"/>
+<text x="905" y="143"
+      font-family="Arial"
+      font-size="25"
+      font-weight="700"
+      fill="#D89BEF">
+  That Matter
+</text>
 
-<rect x="1038" y="173" width="48" height="5"
-      rx="3" fill="#D89BEF"/>
+<text x="905" y="165"
+      font-family="Arial"
+      font-size="9"
+      fill="#877A91">
+  Turning analysis into decisions
+</text>
 
-
-<!-- BOTTOM DIAGNOSTIC GRAPH -->
-<line x1="770" y1="282" x2="1125" y2="282"
-      stroke="#7440A8" stroke-width="1.5"/>
-
-<!-- Training error -->
-<path d="M775 250
-         C830 260,875 280,920 300
-         C965 315,1010 320,1105 322"
-      fill="none"
-      stroke="#7440A8"
-      stroke-width="2.5"
-      stroke-dasharray="500"
-      stroke-dashoffset="500">
-
-  <animate attributeName="stroke-dashoffset"
-           values="500;0;500"
-           dur="8s"
+<rect x="905" y="182"
+      width="118"
+      height="3"
+      rx="2"
+      fill="url(#purple)">
+  <animate attributeName="width"
+           values="70;118;70"
+           dur="4s"
            repeatCount="indefinite"/>
-</path>
+</rect>
 
-<!-- Validation error -->
-<path d="M775 315
-         C820 300,860 275,900 265
-         C940 255,975 260,1010 280
-         C1045 300,1075 315,1105 320"
+
+<!-- ================================================= -->
+<!-- RIGHT LOWER TREND -->
+<!-- ================================================= -->
+
+<rect x="760" y="239"
+      width="380"
+      height="55"
+      rx="16"
+      fill="#120C18"
+      stroke="#34223F"/>
+
+<text x="780" y="260"
+      font-family="Arial"
+      font-size="8"
+      font-weight="700"
+      letter-spacing="1.5"
+      fill="#A86BD0">
+  FINAL TREND
+</text>
+
+<path d="M780 278
+         C805 270,820 274,840 264
+         C858 255,875 269,895 257
+         C915 245,932 254,950 248
+         C972 240,992 247,1015 237"
       fill="none"
       stroke="#D89BEF"
-      stroke-width="2.5"
-      stroke-dasharray="500"
-      stroke-dashoffset="500">
+      stroke-width="2.2"
+      stroke-linecap="round"
+      stroke-dasharray="260"
+      stroke-dashoffset="260">
 
   <animate attributeName="stroke-dashoffset"
-           values="500;0;500"
-           dur="8s"
-           begin="1s"
+           values="260;0;260"
+           dur="7s"
            repeatCount="indefinite"/>
 </path>
 
-<!-- Diagnostic points -->
-<circle cx="900" cy="265" r="6" fill="#D89BEF"/>
-<circle cx="965" cy="315" r="6" fill="#A86BD0"/>
-
-<circle cx="1010" cy="280" r="6"
+<circle cx="1015" cy="237"
+        r="4"
         fill="#D89BEF"
-        filter="url(#glowH)">
-  <animate attributeName="r"
-           values="5;9;5"
+        filter="url(#glow)"/>
+
+<text x="1050" y="257"
+      font-family="Arial"
+      font-size="8"
+      font-weight="700"
+      fill="#796B83">
+  STATUS
+</text>
+
+<text x="1050" y="277"
+      font-family="Arial"
+      font-size="10"
+      font-weight="700"
+      fill="#FFFFFF">
+  Ready
+</text>
+
+
+<!-- ================================================= -->
+<!-- PREMIUM OUTPUT CARDS -->
+<!-- ================================================= -->
+
+<rect x="760" y="309"
+      width="115"
+      height="51"
+      rx="14"
+      fill="#17101F"
+      stroke="#7440A8"/>
+
+<text x="778" y="328"
+      font-family="Arial"
+      font-size="8"
+      font-weight="700"
+      letter-spacing="1.2"
+      fill="#A86BD0">
+  INSIGHT
+</text>
+
+<text x="778" y="348"
+      font-family="Arial"
+      font-size="13"
+      font-weight="700"
+      fill="#FFFFFF">
+  Findings
+</text>
+
+
+<rect x="888" y="309"
+      width="115"
+      height="51"
+      rx="14"
+      fill="#17101F"
+      stroke="#A86BD0"/>
+
+<text x="906" y="328"
+      font-family="Arial"
+      font-size="8"
+      font-weight="700"
+      letter-spacing="1.2"
+      fill="#A86BD0">
+  REPORT
+</text>
+
+<text x="906" y="348"
+      font-family="Arial"
+      font-size="13"
+      font-weight="700"
+      fill="#FFFFFF">
+  Visuals
+</text>
+
+
+<rect x="1016" y="309"
+      width="124"
+      height="51"
+      rx="14"
+      fill="#17101F"
+      stroke="#D89BEF"/>
+
+<text x="1034" y="328"
+      font-family="Arial"
+      font-size="8"
+      font-weight="700"
+      letter-spacing="1.2"
+      fill="#A86BD0">
+  OUTPUT
+</text>
+
+<text x="1034" y="348"
+      font-family="Arial"
+      font-size="13"
+      font-weight="700"
+      fill="#FFFFFF">
+  Decision Ready
+</text>
+
+
+<!-- ================================================= -->
+<!-- BOTTOM PREMIUM LINE -->
+<!-- ================================================= -->
+
+<line x1="52" y1="385"
+      x2="1140" y2="385"
+      stroke="#34223F"
+      stroke-width="1"/>
+
+<line x1="52" y1="385"
+      x2="310" y2="385"
+      stroke="url(#purple)"
+      stroke-width="1"/>
+
+<circle cx="1080" cy="385"
+        r="3"
+        fill="#7440A8">
+  <animate attributeName="cy"
+           values="385;379;385"
            dur="2s"
            repeatCount="indefinite"/>
 </circle>
 
-<text x="775" y="245"
-      font-family="Arial"
-      font-size="9"
-      fill="#A86BD0">TRAIN ERROR</text>
-
-<text x="1020" y="250"
-      font-family="Arial"
-      font-size="9"
-      fill="#D89BEF">VALIDATION</text>
-
-
-<!-- METRIC CARDS -->
-<rect x="760" y="304" width="105" height="58"
-      rx="14" fill="#171020" stroke="#7440A8"/>
-
-<text x="780" y="327"
-      font-family="Arial"
-      font-size="10"
-      font-weight="600"
-      fill="#A86BD0">BIAS</text>
-
-<text x="780" y="348"
-      font-family="Arial"
-      font-size="14"
-      font-weight="700"
-      fill="#FFFFFF">High / Low</text>
-
-
-<rect x="880" y="304" width="105" height="58"
-      rx="14" fill="#171020" stroke="#A86BD0"/>
-
-<text x="900" y="327"
-      font-family="Arial"
-      font-size="10"
-      font-weight="600"
-      fill="#A86BD0">VARIANCE</text>
-
-<text x="900" y="348"
-      font-family="Arial"
-      font-size="14"
-      font-weight="700"
-      fill="#FFFFFF">High / Low</text>
-
-
-<rect x="1000" y="304" width="140" height="58"
-      rx="14" fill="#171020" stroke="#D89BEF"/>
-
-<text x="1020" y="327"
-      font-family="Arial"
-      font-size="10"
-      font-weight="600"
-      fill="#A86BD0">DIAGNOSIS</text>
-
-<text x="1020" y="348"
-      font-family="Arial"
-      font-size="14"
-      font-weight="700"
-      fill="#FFFFFF">Generalization</text>
-
-
-<!-- BOTTOM LINE -->
-<line x1="52" y1="392" x2="1140" y2="392"
-      stroke="#7440A8"
-      stroke-width="1"
-      opacity=".6"/>
-
-<circle cx="1080" cy="392" r="4" fill="#7440A8">
+<circle cx="1100" cy="385"
+        r="3"
+        fill="#A86BD0">
   <animate attributeName="cy"
-           values="392;386;392"
-           dur="2s"
-           repeatCount="indefinite"/>
-</circle>
-
-<circle cx="1100" cy="392" r="4" fill="#A86BD0">
-  <animate attributeName="cy"
-           values="392;384;392"
+           values="385;377;385"
            dur="2.5s"
            repeatCount="indefinite"/>
 </circle>
 
-<circle cx="1120" cy="392" r="4" fill="#D89BEF">
+<circle cx="1120" cy="385"
+        r="3"
+        fill="#D89BEF">
   <animate attributeName="cy"
-           values="392;386;392"
+           values="385;379;385"
            dur="3s"
            repeatCount="indefinite"/>
 </circle>
