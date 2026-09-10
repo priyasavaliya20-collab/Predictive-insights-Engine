@@ -1,5 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg"
-     width="1200" height="420"
+     width="1200"
+     height="420"
      viewBox="0 0 1200 420">
 
 <defs>
@@ -20,38 +21,30 @@
 </defs>
 
 
-<!-- ================= BACKGROUND ================= -->
-
+<!-- BACKGROUND -->
 <rect width="1200"
       height="420"
       rx="25"
       fill="url(#bg)"/>
 
 
-<!-- subtle ambient glow -->
-
-<circle cx="1040" cy="80" r="90"
+<!-- subtle background glow -->
+<circle cx="1040" cy="75"
+        r="100"
         fill="#7440A8"
         opacity=".07">
+
   <animate attributeName="r"
-           values="80;105;80"
+           values="85;110;85"
            dur="6s"
            repeatCount="indefinite"/>
-</circle>
 
-<circle cx="160" cy="330" r="70"
-        fill="#A86BD0"
-        opacity=".05">
-  <animate attributeName="r"
-           values="65;85;65"
-           dur="7s"
-           repeatCount="indefinite"/>
 </circle>
-
 
 
 <!-- ================= LEFT TITLE ================= -->
 
+<!-- PART B -->
 <rect x="52" y="42"
       width="118"
       height="30"
@@ -74,18 +67,17 @@
       font-weight="700"
       letter-spacing="2"
       fill="#D89BEF">
-  PART C
+  PART B
 </text>
 
 
 <!-- TITLE -->
-
 <text x="52" y="120"
       font-family="Arial"
-      font-size="35"
+      font-size="34"
       font-weight="700"
       fill="#FFFFFF">
-  Simple Linear
+  Data Understanding
 </text>
 
 <text x="52" y="162"
@@ -94,7 +86,7 @@
       font-weight="700"
       fill="#D89BEF">
 
-  Regression
+  &amp; EDA
 
   <animate attributeName="opacity"
            values=".75;1;.75"
@@ -104,8 +96,7 @@
 </text>
 
 
-<!-- underline -->
-
+<!-- UNDERLINE -->
 <rect x="52" y="180"
       width="78"
       height="4"
@@ -113,7 +104,7 @@
       fill="#7440A8">
 
   <animate attributeName="width"
-           values="60;78;60"
+           values="55;78;55"
            dur="4s"
            repeatCount="indefinite"/>
 
@@ -127,7 +118,7 @@
 
 
 
-<!-- ================= REGRESSION CARD ================= -->
+<!-- ================= EDA GRAPH CARD ================= -->
 
 <rect x="52" y="213"
       width="406"
@@ -138,11 +129,12 @@
       stroke-width="1.5">
 
   <animate attributeName="stroke-opacity"
-           values=".6;1;.6"
+           values=".55;1;.55"
            dur="4s"
            repeatCount="indefinite"/>
 
 </rect>
+
 
 <text x="78" y="240"
       font-family="Arial"
@@ -150,12 +142,11 @@
       font-weight="600"
       letter-spacing="1.5"
       fill="#A86BD0">
-  REGRESSION MODEL
+  DATA EXPLORATION
 </text>
 
 
-<!-- axes -->
-
+<!-- AXES -->
 <line x1="80" y1="330"
       x2="425" y2="330"
       stroke="#7440A8"
@@ -167,144 +158,172 @@
       stroke-width="2"/>
 
 
-<!-- animated regression line -->
+<!-- BAR CHART -->
 
-<line x1="95" y1="315"
-      x2="405" y2="270"
+<rect x="100" y="302"
+      width="18"
+      height="28"
+      rx="3"
+      fill="#7440A8">
+
+  <animate attributeName="height"
+           values="28;36;28"
+           dur="3s"
+           repeatCount="indefinite"/>
+
+  <animate attributeName="y"
+           values="302;294;302"
+           dur="3s"
+           repeatCount="indefinite"/>
+
+</rect>
+
+
+<rect x="128" y="286"
+      width="18"
+      height="44"
+      rx="3"
+      fill="#A86BD0">
+
+  <animate attributeName="height"
+           values="44;54;44"
+           dur="3s"
+           begin=".3s"
+           repeatCount="indefinite"/>
+
+  <animate attributeName="y"
+           values="286;276;286"
+           dur="3s"
+           begin=".3s"
+           repeatCount="indefinite"/>
+
+</rect>
+
+
+<rect x="156" y="268"
+      width="18"
+      height="62"
+      rx="3"
+      fill="#D89BEF">
+
+  <animate attributeName="height"
+           values="62;70;62"
+           dur="3s"
+           begin=".6s"
+           repeatCount="indefinite"/>
+
+  <animate attributeName="y"
+           values="268;260;268"
+           dur="3s"
+           begin=".6s"
+           repeatCount="indefinite"/>
+
+</rect>
+
+
+<rect x="184" y="280"
+      width="18"
+      height="50"
+      rx="3"
+      fill="#A86BD0">
+
+  <animate attributeName="height"
+           values="50;58;50"
+           dur="3s"
+           begin=".9s"
+           repeatCount="indefinite"/>
+
+  <animate attributeName="y"
+           values="280;272;280"
+           dur="3s"
+           begin=".9s"
+           repeatCount="indefinite"/>
+
+</rect>
+
+
+<rect x="212" y="295"
+      width="18"
+      height="35"
+      rx="3"
+      fill="#7440A8">
+
+  <animate attributeName="height"
+           values="35;43;35"
+           dur="3s"
+           begin="1.2s"
+           repeatCount="indefinite"/>
+
+  <animate attributeName="y"
+           values="295;287;295"
+           dur="3s"
+           begin="1.2s"
+           repeatCount="indefinite"/>
+
+</rect>
+
+
+<rect x="240" y="309"
+      width="18"
+      height="21"
+      rx="3"
+      fill="#A86BD0">
+
+  <animate attributeName="height"
+           values="21;28;21"
+           dur="3s"
+           begin="1.5s"
+           repeatCount="indefinite"/>
+
+  <animate attributeName="y"
+           values="309;302;309"
+           dur="3s"
+           begin="1.5s"
+           repeatCount="indefinite"/>
+
+</rect>
+
+
+<!-- TREND LINE -->
+<path d="M270 310
+         C290 285,310 292,330 278
+         S370 260,395 265"
+      fill="none"
       stroke="#D89BEF"
       stroke-width="3"
       stroke-linecap="round"
-      stroke-dasharray="330"
-      stroke-dashoffset="330">
+      stroke-dasharray="8 6">
 
   <animate attributeName="stroke-dashoffset"
-           values="330;0;0;330"
-           dur="7s"
+           values="0;-28"
+           dur="2s"
            repeatCount="indefinite"/>
 
-</line>
+</path>
 
 
-
-<!-- DATA POINTS -->
-
-<g fill="#A86BD0">
-
-  <circle cx="112" cy="310" r="5">
-    <animate attributeName="r"
-             values="4;6;4"
-             dur="3s"
-             repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="142" cy="305" r="5">
-    <animate attributeName="r"
-             values="4;6;4"
-             dur="3s"
-             begin=".3s"
-             repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="173" cy="299" r="5">
-    <animate attributeName="r"
-             values="4;6;4"
-             dur="3s"
-             begin=".6s"
-             repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="204" cy="295" r="5">
-    <animate attributeName="r"
-             values="4;6;4"
-             dur="3s"
-             begin=".9s"
-             repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="267" cy="286" r="5">
-    <animate attributeName="r"
-             values="4;6;4"
-             dur="3s"
-             begin="1.2s"
-             repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="298" cy="280" r="5">
-    <animate attributeName="r"
-             values="4;6;4"
-             dur="3s"
-             begin="1.5s"
-             repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="330" cy="278" r="5">
-    <animate attributeName="r"
-             values="4;6;4"
-             dur="3s"
-             begin="1.8s"
-             repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="362" cy="273" r="5">
-    <animate attributeName="r"
-             values="4;6;4"
-             dur="3s"
-             begin="2.1s"
-             repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="395" cy="270" r="5">
-    <animate attributeName="r"
-             values="4;6;4"
-             dur="3s"
-             begin="2.4s"
-             repeatCount="indefinite"/>
-  </circle>
-
-</g>
-
-
-<!-- highlighted data point -->
-
-<circle cx="235"
-        cy="289"
-        r="7"
+<!-- moving analysis point -->
+<circle cx="330"
+        cy="278"
+        r="6"
         fill="#D89BEF"
         filter="url(#glow)">
 
-  <animate attributeName="cy"
-           values="289;279;289"
-           dur="2.5s"
+  <animate attributeName="cx"
+           values="330;360;330"
+           dur="4s"
            repeatCount="indefinite"/>
 
-  <animate attributeName="r"
-           values="6;10;6"
-           dur="2.5s"
+  <animate attributeName="cy"
+           values="278;263;278"
+           dur="4s"
            repeatCount="indefinite"/>
 
 </circle>
 
 
-<!-- equation -->
 
-<rect x="265" y="235"
-      width="125"
-      height="29"
-      rx="8"
-      fill="#7440A8"
-      opacity=".22"/>
-
-<text x="278" y="255"
-      font-family="Arial"
-      font-size="12"
-      font-weight="700"
-      fill="#D89BEF">
-  ŷ = b₀ + b₁x
-</text>
-
-
-
-<!-- ================= CENTER FLOW ================= -->
+<!-- ================= CENTER WORKFLOW ================= -->
 
 <text x="500" y="78"
       font-family="Arial"
@@ -312,12 +331,11 @@
       font-weight="600"
       letter-spacing="2"
       fill="#A86BD0">
-  MODEL FLOW
+  EDA FLOW
 </text>
 
 
-<!-- vertical flow line -->
-
+<!-- animated connector -->
 <line x1="515" y1="106"
       x2="515" y2="320"
       stroke="#7440A8"
@@ -332,8 +350,7 @@
 </line>
 
 
-<!-- 01 -->
-
+<!-- STEP 01 -->
 <circle cx="515" cy="108"
         r="19"
         fill="#7440A8"
@@ -360,12 +377,11 @@
       font-size="14"
       font-weight="700"
       fill="#FFFFFF">
-  Input X
+  Dataset
 </text>
 
 
-<!-- 02 -->
-
+<!-- STEP 02 -->
 <circle cx="515" cy="178"
         r="19"
         fill="#A86BD0"
@@ -374,7 +390,7 @@
   <animate attributeName="r"
            values="18;22;18"
            dur="4s"
-           begin="1s"
+           begin=".8s"
            repeatCount="indefinite"/>
 
 </circle>
@@ -393,12 +409,11 @@
       font-size="14"
       font-weight="700"
       fill="#FFFFFF">
-  Fit Line
+  Data Quality
 </text>
 
 
-<!-- 03 -->
-
+<!-- STEP 03 -->
 <circle cx="515" cy="248"
         r="19"
         fill="#7440A8"
@@ -407,7 +422,7 @@
   <animate attributeName="r"
            values="18;22;18"
            dur="4s"
-           begin="2s"
+           begin="1.6s"
            repeatCount="indefinite"/>
 
 </circle>
@@ -426,12 +441,11 @@
       font-size="14"
       font-weight="700"
       fill="#FFFFFF">
-  Predict Y
+  Statistics
 </text>
 
 
-<!-- 04 -->
-
+<!-- STEP 04 -->
 <circle cx="515" cy="318"
         r="19"
         fill="#D89BEF"
@@ -440,7 +454,7 @@
   <animate attributeName="r"
            values="18;22;18"
            dur="4s"
-           begin="3s"
+           begin="2.4s"
            repeatCount="indefinite"/>
 
 </circle>
@@ -459,12 +473,12 @@
       font-size="14"
       font-weight="700"
       fill="#FFFFFF">
-  Evaluate
+  Insights
 </text>
 
 
 
-<!-- ================= RIGHT PREDICTIVE ENGINE ================= -->
+<!-- ================= RIGHT EDA ENGINE ================= -->
 
 <rect x="760" y="45"
       width="380"
@@ -475,29 +489,27 @@
       stroke-width="1.5">
 
   <animate attributeName="stroke-opacity"
-           values=".6;1;.6"
+           values=".55;1;.55"
            dur="5s"
            repeatCount="indefinite"/>
 
 </rect>
 
 
-<text x="920" y="80"
+<text x="950" y="80"
       text-anchor="middle"
       font-family="Arial"
       font-size="10"
       font-weight="600"
       letter-spacing="2"
       fill="#A86BD0">
-  PREDICTIVE ENGINE
+  EDA ENGINE
 </text>
 
 
-<!-- rotating ring -->
-
-<g>
-
-<circle cx="835" cy="133"
+<!-- rotating analysis ring -->
+<circle cx="835"
+        cy="133"
         r="40"
         fill="none"
         stroke="#7440A8"
@@ -509,31 +521,28 @@
       type="rotate"
       from="0 835 133"
       to="360 835 133"
-      dur="9s"
+      dur="10s"
       repeatCount="indefinite"/>
 
 </circle>
 
-</g>
-
 
 <!-- center -->
-
-<circle cx="835" cy="133"
+<circle cx="835"
+        cy="133"
         r="12"
         fill="#D89BEF"
         filter="url(#glow)">
 
   <animate attributeName="r"
            values="10;15;10"
-           dur="2s"
+           dur="2.5s"
            repeatCount="indefinite"/>
 
 </circle>
 
 
 <!-- orbiting dot -->
-
 <circle cx="835"
         cy="93"
         r="5"
@@ -550,12 +559,13 @@
 </circle>
 
 
+<!-- extra dots -->
 <circle cx="795" cy="93"
         r="4"
         fill="#D89BEF">
 
   <animate attributeName="cy"
-           values="93;86;93"
+           values="93;85;93"
            dur="2.5s"
            repeatCount="indefinite"/>
 
@@ -567,21 +577,20 @@
         fill="#7440A8">
 
   <animate attributeName="cy"
-           values="157;164;157"
+           values="157;165;157"
            dur="3s"
            repeatCount="indefinite"/>
 
 </circle>
 
 
-<!-- RIGHT TEXT -->
-
+<!-- RIGHT TITLE -->
 <text x="920" y="120"
       font-family="Arial"
       font-size="27"
       font-weight="700"
       fill="#FFFFFF">
-  Predict
+  Explore
 </text>
 
 <text x="920" y="151"
@@ -590,7 +599,7 @@
       font-weight="700"
       fill="#D89BEF">
 
-  Outcomes
+  Patterns
 
   <animate attributeName="opacity"
            values=".7;1;.7"
@@ -601,7 +610,6 @@
 
 
 <!-- animated underline -->
-
 <rect x="920" y="173"
       width="110"
       height="5"
@@ -609,7 +617,7 @@
       fill="#7440A8">
 
   <animate attributeName="width"
-           values="70;110;70"
+           values="75;110;75"
            dur="4s"
            repeatCount="indefinite"/>
 
@@ -619,18 +627,11 @@
       width="48"
       height="5"
       rx="3"
-      fill="#D89BEF">
-
-  <animate attributeName="x"
-           values="1038;1050;1038"
-           dur="4s"
-           repeatCount="indefinite"/>
-
-</rect>
+      fill="#D89BEF"/>
 
 
 
-<!-- ================= MINI TREND GRAPH ================= -->
+<!-- ================= MINI INSIGHT GRAPH ================= -->
 
 <line x1="770" y1="282"
       x2="1125" y2="282"
@@ -647,14 +648,12 @@
   stroke-dashoffset="450">
 
   <animate attributeName="stroke-dashoffset"
-           values="450;0;0;450"
+           values="450;0;450"
            dur="8s"
            repeatCount="indefinite"/>
 
 </polyline>
 
-
-<!-- graph points -->
 
 <circle cx="775" cy="255"
         r="6"
@@ -697,100 +696,77 @@
 
 
 
-<!-- ================= BOTTOM CARDS ================= -->
+<!-- ================= BOTTOM INSIGHT PILLS ================= -->
 
 <rect x="760" y="304"
-      width="112"
+      width="105"
       height="58"
       rx="14"
       fill="#171020"
-      stroke="#7440A8">
+      stroke="#7440A8"/>
 
-  <animate attributeName="y"
-           values="304;300;304"
-           dur="4s"
-           repeatCount="indefinite"/>
-
-</rect>
-
-<text x="780" y="325"
+<text x="780" y="327"
       font-family="Arial"
-      font-size="9"
+      font-size="10"
       font-weight="600"
       fill="#A86BD0">
-  R²
+  DATA
 </text>
 
 <text x="780" y="348"
       font-family="Arial"
-      font-size="15"
+      font-size="14"
       font-weight="700"
       fill="#FFFFFF">
-  Model Fit
+  Quality
 </text>
 
 
-<rect x="887" y="304"
-      width="112"
+<rect x="880" y="304"
+      width="105"
       height="58"
       rx="14"
       fill="#171020"
-      stroke="#A86BD0">
+      stroke="#A86BD0"/>
 
-  <animate attributeName="y"
-           values="304;298;304"
-           dur="4s"
-           begin=".7s"
-           repeatCount="indefinite"/>
-
-</rect>
-
-<text x="907" y="325"
+<text x="900" y="327"
       font-family="Arial"
-      font-size="9"
+      font-size="10"
       font-weight="600"
       fill="#A86BD0">
-  b₁
+  TRENDS
 </text>
 
-<text x="907" y="348"
+<text x="900" y="348"
       font-family="Arial"
-      font-size="15"
+      font-size="14"
       font-weight="700"
       fill="#FFFFFF">
-  Slope
+  Patterns
 </text>
 
 
-<rect x="1014" y="304"
-      width="126"
+<rect x="1000" y="304"
+      width="140"
       height="58"
       rx="14"
       fill="#171020"
-      stroke="#D89BEF">
+      stroke="#D89BEF"/>
 
-  <animate attributeName="y"
-           values="304;300;304"
-           dur="4s"
-           begin="1.4s"
-           repeatCount="indefinite"/>
-
-</rect>
-
-<text x="1034" y="325"
+<text x="1020" y="327"
       font-family="Arial"
-      font-size="9"
+      font-size="10"
       font-weight="600"
       fill="#A86BD0">
-  ŷ
+  INSIGHTS
 </text>
 
-<text x="1034" y="348"
+<text x="1020" y="348"
       font-family="Arial"
-      font-size="15"
+      font-size="14"
       font-weight="700"
       fill="#FFFFFF">
-  Prediction
+  Discover
 </text>
 
 
@@ -804,14 +780,14 @@
       opacity=".6"/>
 
 
-<!-- moving bottom dots -->
+<!-- animated dots -->
 
 <circle cx="1080" cy="392"
         r="4"
         fill="#7440A8">
 
-  <animate attributeName="cx"
-           values="1080;1090;1080"
+  <animate attributeName="cy"
+           values="392;386;392"
            dur="2s"
            repeatCount="indefinite"/>
 
@@ -821,10 +797,9 @@
         r="4"
         fill="#A86BD0">
 
-  <animate attributeName="cx"
-           values="1100;1110;1100"
-           dur="2s"
-           begin=".3s"
+  <animate attributeName="cy"
+           values="392;384;392"
+           dur="2.5s"
            repeatCount="indefinite"/>
 
 </circle>
@@ -833,10 +808,9 @@
         r="4"
         fill="#D89BEF">
 
-  <animate attributeName="cx"
-           values="1120;1130;1120"
-           dur="2s"
-           begin=".6s"
+  <animate attributeName="cy"
+           values="392;386;392"
+           dur="3s"
            repeatCount="indefinite"/>
 
 </circle>
@@ -861,21 +835,5 @@
            repeatCount="indefinite"/>
 
 </circle>
-
-
-<!-- second floating particle -->
-
-<circle cx="670"
-        cy="90"
-        r="4"
-        fill="#A86BD0">
-
-  <animate attributeName="cy"
-           values="90;78;90"
-           dur="3.5s"
-           repeatCount="indefinite"/>
-
-</circle>
-
 
 </svg>
