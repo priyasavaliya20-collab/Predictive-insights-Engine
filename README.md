@@ -1,4 +1,4 @@
-
+<img width="1200" height="420" alt="f" src="https://github.com/user-attachments/assets/91bd8407-6007-4336-ab54-156d9600a25c" /><img width="1200" height="420" alt="f" src="https://github.com/user-attachments/assets/1edc9449-9879-4f2b-ac8a-41456a8f0a2c" /><img width="1200" height="420" alt="f" src="https://github.com/user-attachments/assets/bc4d64c7-0de7-4431-aab6-831a1adcc1d8" />
 <img width="1200" height="420" alt="f" src="https://github.com/user-attachments/assets/c9a0cd5e-dbe3-4240-bbf0-337c59ac4f90" />
 
 ---
@@ -75,7 +75,13 @@ Data Loading & EDA → Train/Test Split → Simple Linear Regression
 
 ---
 
-## 📊 Part A: Data Understanding & EDA
+## 📊 Part B: Data Understanding & Preparation
+
+
+<img width="1200" height="420" alt="f" src="https://github.com/user-attachments/assets/f4c6dd89-432a-43ad-98c5-6200922cac82" />
+
+
+
 
 Loaded the dataset and inspected structure, types, and relationships between each feature and price.
 
@@ -89,7 +95,10 @@ data.shape
 
 ---
 
-## 📉 Part B: Simple Linear Regression
+## 📉 Part C: Simple Linear Regression
+
+
+<img width="1200" height="420" alt="f" src="https://github.com/user-attachments/assets/e4a30434-0dec-4d6e-817a-6a17650d0fd4" />
 
 Predicted price using `area_sqft` alone as the single feature.
 
@@ -103,7 +112,9 @@ y_pred_slr = slr_model.predict(X_test_slr)
 
 ---
 
-## 🧮 Part C: Model Evaluation Metrics
+## 🧮 Part D: Model Evaluation Metrics
+
+<img width="1200" height="420" alt="f" src="https://github.com/user-attachments/assets/10d69dac-aef4-4252-a64e-9aa2d4be457d" />
 
 Evaluated Simple Linear Regression using MSE, MAE, RMSE, R², and Adjusted R².
 
@@ -119,7 +130,10 @@ adjusted_r2 = 1 - ((1 - r2) * (n - 1) / (n - p - 1))
 
 ---
 
-## 🏗️ Part D: Multiple Linear Regression
+## 🏗️ Part E: Multiple Linear Regression
+
+<img width="1200" height="420" alt="f" src="https://github.com/user-attachments/assets/8099cb20-a384-416b-819b-4b509fc20a88" />
+
 
 Extended the model to all five relevant features: `area_sqft`, `bedrooms`, `bathrooms`, `location_score`, `age_years`.
 
@@ -133,7 +147,11 @@ y_pred_mlr = mlr_model.predict(X_test_mlr)
 
 ---
 
-## 🧬 Part E: Polynomial Regression
+## 🧬 Part F: Polynomial Regression
+
+
+<img width="1200" height="420" alt="f" src="https://github.com/user-attachments/assets/6cbf6cf2-461d-4cb6-ac73-b994d60468e8" />
+
 
 Fit a degree-2 polynomial on `area_sqft` and compared it against Simple Linear Regression.
 
@@ -147,7 +165,11 @@ poly_model = LinearRegression().fit(X_train_poly_transformed, y_train_poly)
 
 ---
 
-## 🌀 Part F: Gradient Descent Optimization
+## 🌀 Part G: Gradient Descent Optimization
+
+
+<img width="1200" height="420" alt="f" src="https://github.com/user-attachments/assets/0269b46b-17ce-497a-92db-308f8c688df9" />
+
 
 Implemented Batch, Stochastic, and Mini-Batch Gradient Descent from scratch on standardized `area_sqft` vs. `house_price_inr`.
 
@@ -167,7 +189,9 @@ Implemented Batch, Stochastic, and Mini-Batch Gradient Descent from scratch on s
 
 ---
 
-## ⚙️ Part G: Bias–Variance & Model Diagnostics
+## ⚙️ Part H: Bias–Variance & Model Diagnostics
+
+<img width="1200" height="420" alt="f" src="https://github.com/user-attachments/assets/de23cc0c-01a1-4edc-a162-57716b5bdab3" />
 
 Compared Training R² vs. 5-Fold Cross-Validation R² across all three models to check for overfitting/underfitting.
 
@@ -186,7 +210,14 @@ mlr_cv = cross_val_score(mlr, X_mlr_all, y_all, cv=cv, scoring='r2')
 
 ---
 
-## 🚀 Part H: Final Deliverable
+## 🚀 Part I: Final Analysis & Reporting
+
+
+<img width="1200" height="420" alt="f" src="https://github.com/user-attachments/assets/860f04d8-324b-4021-be2a-85c3f0d80c3c" />
+
+
+
+
 
 ```python
 final_table = pd.DataFrame({
