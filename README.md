@@ -5,11 +5,8 @@
 
 ## 🎯 Objective
 
-<div aling="center">
-<img width="1600" height="900" alt="download" src="https://github.com/user-attachments/assets/9a905509-03e0-4975-854c-f6f041e6cb8a" />
-</div>
 
-
+<img width="1536" height="1024" alt="download" src="https://github.com/user-attachments/assets/109d9e2f-05a4-4f8c-9456-48a2faa2ee2f" />
 
 
 ---
