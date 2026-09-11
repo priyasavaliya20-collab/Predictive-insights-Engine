@@ -5,9 +5,9 @@
 
 ## 🎯 Objective
 
-
+<div aling="center">
 <img width="1600" height="900" alt="download" src="https://github.com/user-attachments/assets/9a905509-03e0-4975-854c-f6f041e6cb8a" />
-
+</div>
 
 
 
