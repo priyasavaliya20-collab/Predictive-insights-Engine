@@ -5,7 +5,12 @@
 
 ## 🎯 Objective
 
-Build and compare regression models — Simple Linear, Multiple Linear, and Polynomial Regression — to predict `house_price_inr` from property features, validate regression assumptions, evaluate models with standard error metrics, implement Gradient Descent optimization from scratch, and diagnose bias–variance trade-offs to identify the best-performing model for real-estate price estimation.
+
+<img width="1536" height="1024" alt="download" src="https://github.com/user-attachments/assets/9a905509-03e0-4975-854c-f6f041e6cb8a" />
+
+
+
+
 
 ---
 
